@@ -1,0 +1,18 @@
+
+Пофиксить:
+
+- Убрать i2c
+
+- пин TAB
+
+- Изменить футпринт USB на выводной.
+
+
+
+
+According to the USB 2.0 specification, a host or device transceiver is required to survive a short of D+ or D- to either GND, or VBUS, or the cable shielding, or each other for at least 24 hours. It is also advised to survive it indefinitely. Therefore you should calculate with a current of at least 5.25V/whatever impedance you calculate for your part. Also, consider the fact that a 125mW resistor dissipating 125mW will produce a dT of about 100 degrees Celsius, which is probably undesired.
+
+The specification also states the required impedance of a full-speed-only driver to be between 28 and 44 ohms, and of a high-speed driver to be between 40.5 and 49.5 ohms.
+
+
+file:///home/mik/Downloads/cd00004062-l6234-three-phase-motor-driver-stmicroelectronics.pdf
