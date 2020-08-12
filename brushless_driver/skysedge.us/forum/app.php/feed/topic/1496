@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="http://skysedge.us/forum/app.php/feed/topic/1496" />
+
+	<title>A Forum at Sky's Edge</title>
+	<subtitle>Community Forum for Sky&#039;s Edge Hardware</subtitle>
+	<link href="http://skysedge.us/forum/index.php" />
+	<updated>2020-07-29T00:08:21</updated>
+
+	<author><name><![CDATA[A Forum at Sky's Edge]]></name></author>
+	<id>http://skysedge.us/forum/app.php/feed/topic/1496</id>
+
+		<entry>
+		<author><name><![CDATA[SteveC]]></name></author>
+		<updated>2020-07-29T00:08:21</updated>
+
+		<published>2020-07-29T00:08:21</published>
+		<id>http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1617#p1617</id>
+		<link href="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1617#p1617"/>
+		<title type="html"><![CDATA[Re: Problem with LiPo charger on FONA board]]></title>
+
+		
+		<content type="html" xml:base="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1617#p1617"><![CDATA[
+From the FONA 3G guide:<br><blockquote class="uncited"><div><strong class="text-strong">Vio - THIS IS THE MOST IMPORTANT PIN!</strong> This is the pin that you MUST drive with an external voltage from 3V-<br>5V to set the logic level converter. The converter also buffers the indicator LEDs so NOTHING will appear to<br>work unless this pin is powered!</div></blockquote>But according to the FONA schematic the charging LEDs should still work since these are powered from Vbus. Strange, but I seem to remember a lack of LED light when using the FONA module standalone. I wouldn't worry about it, use the FONA module when attached on the main board.<p>Statistics: Posted by <a href="http://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1724">SteveC</a> — Wed Jul 29, 2020 12:08 am</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[chaza]]></name></author>
+		<updated>2020-07-27T15:21:59</updated>
+
+		<published>2020-07-27T15:21:59</published>
+		<id>http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1616#p1616</id>
+		<link href="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1616#p1616"/>
+		<title type="html"><![CDATA[Re: Problem with LiPo charger on FONA board]]></title>
+
+		
+		<content type="html" xml:base="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1616#p1616"><![CDATA[
+Thanks for the input Steve! Yah, I'll contact Adafruit and see how that goes. I don't believe that I did anything "wrong" in using these boards and never had a battery connected in reverse. I am using the battery, also from Adafruit, that is specified in Justine's parts list. I have probably run the battery down many times and also left the phone connected to a computer Usb port for several days while debugging software off and on. One other thing I notice (on my one remaining good FONA) is that the charging "Done" LED never illuminates even when the battery is 100% charged. Adafruit describes the behavior of the two charging LEDs as this: <br><br>(<a href="https://learn.adafruit.com/adafruit-fona-3g-cellular-gps-breakout/pinouts" class="postlink">https://learn.adafruit.com/adafruit-fon ... ut/pinouts</a>)<br><em class="text-italics"><br>Charging - Orange! This is next to the microUSB jack. Indicates the onboard lipo charger is charging<br>Done - Green! This is next to the JST jack. Indicates that the battery charging is done and the battery is full</em><br><br>I can interrogate the modem with the "AT+CBC" command and it reports that the battery is 100% full (when I also know it should be fully charged) but that LED never illuminates -- the orange "Charging" light continues to illuminate however. Note that I've only looked at this when the modem is standalone and not connected to the phone main board.  I'm not sure what other people are seeing there?<p>Statistics: Posted by <a href="http://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1749">chaza</a> — Mon Jul 27, 2020 3:21 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[SteveC]]></name></author>
+		<updated>2020-07-26T19:11:07</updated>
+
+		<published>2020-07-26T19:11:07</published>
+		<id>http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1615#p1615</id>
+		<link href="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1615#p1615"/>
+		<title type="html"><![CDATA[Re: Problem with LiPo charger on FONA board]]></title>
+
+		
+		<content type="html" xml:base="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1615#p1615"><![CDATA[
+Very sorry to hear that. This project needs a lot of patience but the end result is worth it.<br><br>I recommend you return the FONA modules to Adafruit for exchange. See here:<br><a href="https://forums.adafruit.com/viewtopic.php?f=54&amp;t=140661&amp;p=695461&amp;hilit=heat#p695461" class="postlink">https://forums.adafruit.com/viewtopic.p ... at#p695461</a><br><br>It's hard to tell from your description what your configuration was to trigger the fault but I assume it wasn't wiring the Li-Po in reverse because when you say <em class="text-italics">"The phone stopped responding"</em> that implies is was working (and the FONA won't work without a battery).<br><br>I suspect the FONA was at fault:<br>When the battery is completely flat (3V) the MCP73831 will dissipate 1W (2 x 0.5). The datasheet states thermal resistance is 130C/W (with a large copper area) so the die temp will be 130 above ambient, say around 150C. That is the shutdown temperature! And on the FONA, the MCP73831 is not well coupled to a large copper area. OK the regulator should safely shutdown until die temp drops to 140C but it's very bad practice to design a circuit where the operating point is around thermal shutdown. Specs will be reduced and reliability plummets. Very bad idea.<br><br>I bet some users do connect the battery in reverse so I recommend you send Adafruit a photo of your battery connected to the FONA to show you got it right. Leave the headers in place, let Adafruit remove them. They might repair and return the same module.<br><br>I never had a FONA fail but then I changed the charging current programming resistor (R3) from 2k to 3k early in my build (I also reduced LED currents). Perhaps you could ask Adafruit to change R3 to 3.0k, if they don't, I recommend you get it done somehow. They're 0805 size.<br><br>Good luck, don't give up!<p>Statistics: Posted by <a href="http://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1724">SteveC</a> — Sun Jul 26, 2020 7:11 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[chaza]]></name></author>
+		<updated>2020-07-25T15:47:54</updated>
+
+		<published>2020-07-25T15:47:54</published>
+		<id>http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1614#p1614</id>
+		<link href="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1614#p1614"/>
+		<title type="html"><![CDATA[Problem with LiPo charger on FONA board]]></title>
+
+		
+		<content type="html" xml:base="http://skysedge.us/forum/viewtopic.php?t=1496&amp;p=1614#p1614"><![CDATA[
+Ok, maybe I'm just clumsy or doing something very wrong but I've now "burned out" two FONA boards.<br>The first happened early in my phone build process and I attributed it to maybe shorting something out on the board against the main phone board when installed "upside down" in it's socket. The phone stopped responding and there was a burning smell - FONA board was also getting hot.<br>I disconnected it, blamed myself for being clumsy, bit the bullet, and ordered another board. Well, I just "lost" this second board. Note that the build was not fully cased at the time and I was doing serial port debugging of the program on the Arduino. The symptom there was that the battery stopped charging but otherwise all worked OK with a charged battery in place. Investigating this some more, I believe the MCP73831 LiPo charger chip on the FONA board is fried in both cases. I thought the first board was completely dead but, luckily, did not discard it. I just hooked it up to USB and can communicate through the serial port OK although this board gets hot in the region of the charger chip. For both boards the orange and green charge status lights are equally dimly lit. There is no voltage on the output of the LiPo. And, yes, because I am (maybe stupidly!) invested in commitment to this project I have a third FONA board that is OK with which to compare.<br><br>These LiPo chip cost 56 cents each(!), so I am going to attempt to replace one although I'm not sure my desoldering/soldering skills are up to the task. I'm wondering if anyone else has had similar issues? I'm not sure what occurred to cause these issues. At various times I've had both data/power and just power USB connections to the sockets on both the FONA and the main board. Maybe to both at the same time -- I don't remember. I'm not sure if connecting to both of these ports simultaneously can be a problem?<p>Statistics: Posted by <a href="http://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1749">chaza</a> — Sat Jul 25, 2020 3:47 pm</p><hr />
+]]></content>
+	</entry>
+	</feed>

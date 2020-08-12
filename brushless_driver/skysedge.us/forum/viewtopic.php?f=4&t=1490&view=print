@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; Vibration motor</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>Vibration motor</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1490">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1490</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Vibration motor</h3>
+				<div class="date">Posted: <strong>Fri May 22, 2020 9:42 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">The February edition board and schematic included a vibration motor with the annotation: "THIS FRIED AN ATMEGA2560V ON ME. SOMETHING WRONG. DON'T POPULATE." After soldering a 100 pin, 0.5mm pitch IC by hand that must have been very upsetting.<br>
+<br>
+I ordered a motor but it's still on back order from Digi-Key. Meanwhile I found this coin motor (8mm x 3.5mm) in a parts drawer. It's a commutated DC motor so I doubt it's significantly different, electrical noise wise, from the motor Justine selected. This motor is available from many suppliers on AliExpress.<br>
+<br>
+It got it working under ATmega control, no ATmega was harmed in the process:
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=25" class="postimage" alt="vibration_motor_board.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>vibration_motor_board.jpg (119.94 KiB) Viewed 1317 times</dd>
+		</dl>
+		
+		
+			</div>
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=26" class="postimage" alt="vibration_motor_schematic.png" onclick="viewableArea(this);" /></dt>
+						<dd>vibration_motor_schematic.png (22.7 KiB) Viewed 1317 times</dd>
+		</dl>
+		
+		
+			</div>
+
+The only electrical noise is approx 350mVpp on the FET drain due to back EMF immediately after motor switch off but due to the clamping diode, it does not go outside the supply rail. Capacitor C14 is not strictly necessary, with it's time constant of a few ms, it removed switch noise of (av 100us) when I used a hardware switch. This circuit works well and no noise gets back to the ATmega. I would also add a 4.7 Ohm resistor in series with the motor lead but I don't have one to hand.<br>
+<br>
+Finally this is the code I used to switch the motor on/off during testing... and play with power saving (the board consumes 16mA, no FONA, all LEDs off but only 200uA in sleep mode). Enjoy!<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>// Toggle the Status &amp; Hook LEDs
+// while sending test strings over USB serial
+// Investigate power saving, board idle current
+// without FONA module is 16mA
+
+#include &lt;Adafruit_SleepyDog.h&gt;
+
+const byte ClearButton = 36;     // Clear selection to all off and sleep during delays
+const byte SignalButton = 34;    // Press to switch on vibration motor
+const byte BatteryButton = 37;   // Press to switch on flashing hook &amp; status LED
+const byte SaButton = 35;        // Press to switch from sleep to normal delay
+const byte StatusLED = 13;
+const byte HookLED = 49;
+const byte VibMotor = 5;
+bool toggle = 0;
+bool enableLEDs = 1;
+bool enableMotor = 0;
+bool enableSleepy = 1;
+int  count = 0;
+
+void setup(){
+// Set pin functions
+  pinMode(StatusLED, OUTPUT);
+  pinMode(HookLED, OUTPUT);
+  pinMode(VibMotor, OUTPUT);
+  pinMode(ClearButton, INPUT_PULLUP);
+  pinMode(SignalButton, INPUT_PULLUP);
+  pinMode(BatteryButton, INPUT_PULLUP);
+  pinMode(SaButton, INPUT_PULLUP);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (enableLEDs == true) {
+    digitalWrite(HookLED, toggle);
+    digitalWrite(StatusLED, !toggle);
+    toggle = !toggle;
+  }
+  if (enableMotor == true)
+    digitalWrite(VibMotor, LOW);  // active low to turn on motor
+  else
+    digitalWrite(VibMotor, HIGH);   // turn motor off
+  if (digitalRead(SignalButton) == LOW)
+    enableMotor = true;
+  if (digitalRead(BatteryButton) == LOW)
+    enableLEDs = true;
+  if (digitalRead(SaButton) == LOW)
+    enableSleepy = false;
+  if (digitalRead(ClearButton) == LOW) {
+    enableMotor = false;
+    enableLEDs = false;
+    digitalWrite(HookLED, LOW);
+    digitalWrite(StatusLED, LOW);
+    enableSleepy = true;
+  }
+  count++;
+  if (enableSleepy == true)
+    Watchdog.sleep(500);
+  else
+    delay(500);
+}
+</code></pre></div></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Vibration motor</h3>
+				<div class="date">Posted: <strong>Fri May 22, 2020 9:49 pm</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">Thanks Steve, great info as usual.</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

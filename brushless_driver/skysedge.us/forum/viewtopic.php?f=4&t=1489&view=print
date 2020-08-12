@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; Can't program via USB</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>Can't program via USB</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1489">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1489</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Can't program via USB</h3>
+				<div class="date">Posted: <strong>Fri May 15, 2020 6:27 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Hi,<br>
+<br>
+Somehow (!), I've managed to assemble a working phone (calls in/out OK, display OK) with a pre-populated board from Justine. I'm now attempting to make, and burn, some code changes but am having no luck. I've done some coding previously with other Arduino and related boards but don't have a ton of experience in this area. Anyway, my first choice was to program via USB but was unsuccessful. I then purchased an Olimex AVR-ISP-MK2 programmer and spent sometime trying to get that going before I happened on comments in this forum about having to use the 10 pin ICSP10 output on the programmer with a 6-pin cable and, of course, no such cable came with the programmer. I had been incorrectly connecting the cellphone board to the 6-pin PDI connector. I've ordered a 10-pin to 6-pin cable but, in the meantime, have gone back to trying USB programming via the Arduino IDE but still no luck. The board shows up in Windows device manager as a FTDI port with no other identifier. I've tried different USB cables with no differences. When flashing, the Leds on the board show a reset and then I see some activity on the Rx and Tx Leds but then I always time out with these messages:<br>
+                         avrdude: stk500_recv(): programmer is not responding<br>
+                         avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00<br>
+                         avrdude: stk500_recv(): programmer is not responding<br>
+<br>
+Sometime the response code is other values, like "0x4a".<br>
+<br>
+Googling this, I see that this is a fairly common problem with Arduinos in general. As a point of reference, I have an Arduino Mega2560-R3 board that I can program with no issues.<br>
+<br>
+I'm fairly certain my board settings, etc., in the Arduino IDE are set correctly. Is there some magic I'm missing or is the signal timing kinda iffy with this MegaCore chip and USB programming?<br>
+<br>
+I assume this will all be moot once I get the correct programmer cable but I thought I'd put this out there in case others have similar issues.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Can't program via USB</h3>
+				<div class="date">Posted: <strong>Fri May 15, 2020 9:37 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=20" class="postimage" alt="programming.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>programming.jpg (24.7 KiB) Viewed 2447 times</dd>
+		</dl>
+		
+		
+			</div>
+
+The message about "stk500" indicates you are trying to upload via a programmer (ctrl-shift-u). To use USB, just click the right arrow icon, or ctrl-U, the programmer type selection will have no effect for USB programming. Make sure a battery is connected and the power switch is on.<br>
+<br>
+The USB interface will enumerate as an FTDI device, hopefully Device Manager also indicated a COM port number. No driver installation is required.<br>
+<br>
+Good news; the PDI and SPI connectors have their GND and power pins in identical positions so you won't have damaged the board.<br>
+<br>
+Good progress though <img class="smilies" src="./images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Can't program via USB</h3>
+				<div class="date">Posted: <strong>Sat May 16, 2020 12:10 am</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Thanks SteveC -- I was using the Right-arrow icon to start the upload (and the Olimex programmer not connected to the computer) when I got those messages. I just retried using the pull-down "Sketch-&gt;Upload" method but the result is the same. I turned on more verbose output and get this:<br>
+<br>
+   avrdude: Version 6.3-20190619<br>
+            Copyright (c) 2000-2005 Brian Dean, <a href="http://www.bdmicro.com/" class="postlink">http://www.bdmicro.com/</a><br>
+            Copyright (c) 2007-2014 Joerg Wunsch<br>
+<br>
+            System wide configuration file is "C:\Users\xxxxx\AppData\Local\Arduino15\packages\MegaCore\hardware\avr\2.0.3/avrdude.conf"<br>
+<br>
+            Using Port                    : COM3<br>
+            Using Programmer        : arduino<br>
+            Overriding Baud Rate    : 115200<br>
+   avrdude: stk500_recv(): programmer is not responding<br>
+   avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0xf5<br>
+   avrdude: stk500_recv(): programmer is not responding<br>
+<br>
+I'm not sure what is causing the "Overriding Baud Rate" message but wonder if it's related to/causing the problem? I'm using the latest Arduino IDE (1.8.12) but will uninstall/reinstall to see if that makes a difference.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Can't program via USB</h3>
+				<div class="date">Posted: <strong>Sat May 16, 2020 3:06 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">My bad, sorry, the STK500 is a programmer that does In-System programming via SPI, it misled me.<br>
+<br>
+I just replicated your symptoms, I also had STK500 error messages when trying to upload via USB even though I don't have an STK500.<br>
+<br>
+But when I started this project, uploading via USB had been very reliable. I just tested a few things; 'Burn Bootloader' restored USB programming. After re-burning the bootloader I uploaded via USB four times, all were successful. I guess my bootloader got corrupted, or a program vector changed (there was a recent MegaCore update).<br>
+<br>
+Mmm there's a commit message on the MegaCore GitHub repository:<br>
+"optiboot_flash -- Update Optiboot flash -- last month"<br>
+<br>
+I hope you receive the programming cable soon because I suspect your bootloader need re-burning... or if you're in a hurry, try replacing your MegaCore library with the previous release.<br>
+<br>
+HTH<br>
+<em class="text-italics">Steve</em></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Can't program via USB</h3>
+				<div class="date">Posted: <strong>Sat May 16, 2020 3:09 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Thanks Steve. I tried all MegaCore board packages from 2.00 to 2.0.3 (latest) and all fail in the same way.<br>
+I tried going back to major version "1" (1.0.6) but those versions don't include AtMega2560 as a choice in the Boards Manager (2561 but not 2560).</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Can't program via USB</h3>
+				<div class="date">Posted: <strong>Sat May 16, 2020 7:20 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Looks like you'll have to burn a new bootloader. While waiting for your 10 to 6 way programming adapter you can use breadboard jumper wires (aka Dupont wires) as an adapter..<br>
+<br>
+Update 17 May: just confirmed uploading a sketch via programmer removes the bootloader.<br>
+<br>
+Justine: perhaps you could supply assembled boards programmed with a bootloader plus a sample sketch uploaded by USB? That way there is still an intact bootloader.</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

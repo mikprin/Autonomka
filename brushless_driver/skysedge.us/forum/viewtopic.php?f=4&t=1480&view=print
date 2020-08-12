@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; So far...</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>So far...</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3>So far...</h3>
+				<div class="date">Posted: <strong>Fri Apr 17, 2020 2:27 am</strong></div>
+				<div class="author">by <strong>Owlwarrior</strong></div>
+				<div class="content">Hey everyone, Aussie guy here. I have my dial and my case but COVID19 has somewhat stopped me from getting some BOM and the PCB. <br>
+When this craziness is over I hope to complete my rotary dial phone but I’m chipping away at it a little bit at a time. <br>
+<br>
+<a href="https://www.instagram.com/p/B_Cj8HShoK_/" class="postlink"><img src="https://www.instagram.com/p/B_Cj8HShoK_/media/?size=m" class="postimage" alt="Image"></a></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Fri Apr 17, 2020 10:48 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Tactical black, I like it! So we have one RotaryCell in the UK (mine), one in Australia... one good thing to rapidly spreading around the world!<br>
+<br>
+Yeah tell me about the delays, it's frustrating. I have the board and most SMT parts now but I fear my tools at home aren't appropriate. I'm waiting for my local Hackspace to re-open.<br>
+<br>
+I have an idea; I ordered 10 boards but I only need 2-3 (I'm going to donate a space model phone for display in a Hackspace). <strong class="text-strong">Owlwarrior:</strong> if you trust me with your address (via private message), I'll be happy to mail a board to you. It's my way of paying back to the community. Postal services are working in the UK, how about Australia?</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sat Apr 18, 2020 3:24 am</strong></div>
+				<div class="author">by <strong>Owlwarrior</strong></div>
+				<div class="content">Yes, I love my black Bakelite landline phone and ways to integrate old technology into new. <br>
+<br>
+That’s very kind of you! Postage services in Australia are slow but working. I don’t want to take away from Justine’s business though.  I’ll drop you a PM. <br>
+<br>
+<br>
+<br>
+- Glenn</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sat Apr 18, 2020 2:27 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">This is the most complete open source project I have ever seen and you've already contributed to the open source culture by publishing your build, helping to inspire and spread Justine's design. It would be great to see your final result.<br>
+<br>
+I plan to visit my post office Monday morning.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 19, 2020 3:04 am</strong></div>
+				<div class="author">by <strong>Owlwarrior</strong></div>
+				<div class="content">Thank you! If I can help someone else in some small way, I will. <br>
+Keeping an eager eye on my mailbox. <br>
+<br>
+-Glenn</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Tue Apr 21, 2020 11:30 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><strong class="text-strong">Owlwarrior:</strong> bare board is on it's way to you (only 19g, small letter). I just got the microcontroller working on mine. A huge relief after soldering the 0.5mm pitch ATmega2560 at home <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"><br>
+<br>
+The bootloader programmed first time with a Bus Pirate. Then I uploaded firmware via the USB (photos shows Rx/Tx LEDs on while programming), also good but USB Vbus only goes to the Tx/Rx LEDs and Fona, so without the Fona I needed the battery to power the board during programming. I guess the Fona supplies battery charging power... I need to check this out.<br>
+<br>
+I forgot this version of the board (Feb 2020) uses different switches. <strong class="text-strong">Owlwarrior:</strong> I recommend you hold off buying the switches in the BoM and try to source the vertical 'parts drawer' switches you see in Justine's video (22:34).<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=10" class="postimage" alt="pcb_programming.JPG" onclick="viewableArea(this);" /></dt>
+						<dd>pcb_programming.JPG (90.73 KiB) Viewed 4202 times</dd>
+		</dl>
+		
+		
+			</div>
+
+Thanks a lot Justine, it's all going smoothly so far.<br>
+Sorry I ditched the New Hampshire-esq motto but I would never ditch the attribution.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Thu Apr 23, 2020 9:22 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">I found the 'parts drawer' switches used on the earlier versions of board (without the Sky'sEDGE logo), available from Mouser (note the mounting lugs should be cut off):<br>
+<br>
+Mfr.:      C&amp;K Switches<br>
+Mfr. No: OS102011MS2QN1<br>
+Mouser  No:  611-OS102011MS2QN1<br>
+Desc.:   Slide Switches SPDT On-On<br>
+<br>
+Mfr.: C&amp;K Switches<br>
+Mfr. No: OS103011MS8QP1<br>
+Mouser No: 611-OS103011MS8QP1<br>
+Desc.: Slide Switches SP3T On-On-On<br>
+<br>
+If the board has holes for switch mounting lugs, you need the part numbers for right angled switches specified in the BoM (extracted from the schematic).</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Thu Apr 23, 2020 10:56 pm</strong></div>
+				<div class="author">by <strong>Owlwarrior</strong></div>
+				<div class="content">Awesome. Not to get ahead of myself, but which USB programmer did you use?<br>
+I’m looking for the OUMEX $20 one from mouser.com Justine used in her build video.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Fri Apr 24, 2020 12:57 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">I used a BusPirate v3.6 to program the bootloader because I already had one (select 'BusPirate as ISP' for the programmer):<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=11" class="postimage" alt="pcb_programming_bp.JPG" onclick="viewableArea(this);" /></dt>
+						<dd>pcb_programming_bp.JPG (96.21 KiB) Viewed 4166 times</dd>
+		</dl>
+		
+		
+			</div>
+
+Note the pin number ordering of the phone's ISP socket (sketched in pencil).<br>
+<br>
+The $20 Olimex AVR-ISP-Mk2 programmer looks good value and ultra easy to use - a safe choice.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sat Apr 25, 2020 2:42 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Hi from Canada,<br>
+<br>
+Some trouble getting all of the parts together with current state of the world.....I did buy one of Justine’s kits as my abilities do not extend to PCboard fabrication. <br>
+<br>
+BUT as of this morning the FONA board is blinking and sort of receives calls. Assuming that the “ringing” is coming from the little speaker,  and I haven’t broken the top part of the board, someone can call me. I cannot answer the call however. <br>
+<br>
+The side LEDs work with dialing but no sound from the speaker either with the dialing or with trying to place a call by pressing the hook button either. <br>
+<br>
+So....fun parts done, now have to get the functional parts working. <br>
+<br>
+Just wondering if anyone has some “simple” troubleshooting ideas....I am not an “electronical engineer”.<br>
+<br>
+Cheers<br>
+Simon</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>1</strong> of <strong>5</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

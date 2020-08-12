@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; Learning Resources</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>Learning Resources</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1474">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1474</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Learning Resources</h3>
+				<div class="date">Posted: <strong>Fri Mar 20, 2020 11:40 pm</strong></div>
+				<div class="author">by <strong>GrailerDiomede</strong></div>
+				<div class="content">The build guide for your Rotary Cell Phone design seems to be far beyond my physical skill set (very limited soldering experience and not much else) and knowledge.  <br>
+<br>
+Aside from finding a local mentor or group, do you have any recommendations on resources to help build the proper physical skills and knowledge needed to follow along with a build like this?  Given the current nCOVID-19 imposed restrictions, attempted self-teaching is the only available path on the long road to being able to approach something like this.<br>
+<br>
+If not, no worries; this tastes like a design for experienced people.<br>
+<br>
+Thank you for sharing your work.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Learning Resources</h3>
+				<div class="date">Posted: <strong>Sat Mar 21, 2020 3:06 pm</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">Hi Grailer,<br>
+<br>
+First, I realize I wasn't clear about my first "welcome" post... I moved your question into a new topic and gave it a title. Please feel free to edit the title if you don't like it. <br>
+<br>
+Anyway,<br>
+<br>
+I'm working on a new version of the build guide that's much clearer and more sequential. That's  here: <a href="https://skysedge.us/rotarycellphone/build/" class="postlink">https://skysedge.us/rotarycellphone/build/</a>, and I've been updating it as I go. I plan to have it entirely done today, or at least this weekend.<br>
+<br>
+You may find that the process appears less daunting after seeing this new version, but even so you're correct that it's not a project for beginners.<br>
+<br>
+I'm not sure I have a go-to resource for self learning this kind of thing. The only thing I can think of right now that doesn't involve social interaction is to point you to Youtube. I haven't thought to identify a channel specifically for learning proper soldering technique, etc, but if someone knows of a good one perhaps they can post here.<br>
+<br>
+In the next few weeks I'll be starting to dive more deeply into the design for the "next generation" version that will run on the 4G network and have other neat things (I'm thinking of an actual mechanical bell inside, and some other changes), and my goal for that version is that it be a complete and easy-to-assemble kit that anyone can do. If I can figure out the FCC licensing (I've been communicating with someone about this) it's even possible that it could also be released as a complete product in addition to the kit, though still open source of course.<br>
+<br>
+~Justine</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Learning Resources</h3>
+				<div class="date">Posted: <strong>Tue Apr 07, 2020 6:09 pm</strong></div>
+				<div class="author">by <strong>nemomtt</strong></div>
+				<div class="content">Hi Grailer,<br>
+<br>
+As with all skills, practice is key.  When the world comes back to something resembling normal you could check for a maker faire in your area, they often have learn to solder workshops.  My son started going those workshops when he was around 10 and it continues to be one of his highlights of the faire.  He is so in love with the workshops he talked me into teaching one on foam carving to make tombstones for Halloween.  It was a lot of fun as he was my assent teacher.<br>
+<br>
+Amazon has many learn to solder kits.  Take your time and remember no one got it right the first time.  When mastering new skills the three most important things to remember are practice, practice and practice. <br>
+<br>
+When it comes to making a complex project, experience with any handcraft can help you develop transferable hand control skills.  When I was young I enjoyed making plastic model kits. I learned a lot of skills this way, partially patience and thinking the problem through. So, while you are cooped up I would order the handcraft kits of your choice and just keep working at it. This might also help your overall sanity.</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

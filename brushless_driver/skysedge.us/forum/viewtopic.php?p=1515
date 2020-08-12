@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>So far... - A Forum at Sky's Edge</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - A Forum at Sky's Edge" href="/forum/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/app.php/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Rotary Cell Phone Kit Community Forum" href="/forum/app.php/feed/forum/4">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - So far..." href="/forum/app.php/feed/topic/1480">	
+	<link rel="canonical" href="http://skysedge.us/forum/viewtopic.php?t=1480">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/en/stylesheet.css?assets_version=6" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>A Forum at Sky's Edge</h1>
+				<p>Community Forum for Sky&#039;s Edge Hardware</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/app.php/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fp%3D1515" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./index.php" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+																			<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a href="./viewforum.php?f=4" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Rotary Cell Phone Kit Community Forum</span></a><meta itemprop="position" content="2" /></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Discuss building and using the 3G rotary cell phone kit. If you're seeking help or would like to help others, this is the place to post.<br /></div>
+
+
+<div class="action-bar bar-top">
+	
+			<a href="./posting.php?mode=reply&amp;f=4&amp;t=1480" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?f=4&amp;t=1480&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="1480" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			42 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=10" role="button">2</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=20" role="button">3</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=30" role="button">4</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=40" role="button">5</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./viewtopic.php?f=4&amp;t=1480&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1498" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1498">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1746&amp;sr=posts">8</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Apr 17, 2020 2:06 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1498">
+
+						<h3 class="first"><a href="./viewtopic.php?p=1498#p1498">So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1498" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1498#p1498" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></strong> &raquo; </span><time datetime="2020-04-17T02:27:56+00:00">Fri Apr 17, 2020 2:27 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Hey everyone, Aussie guy here. I have my dial and my case but COVID19 has somewhat stopped me from getting some BOM and the PCB. <br>
+When this craziness is over I hope to complete my rotary dial phone but I’m chipping away at it a little bit at a time. <br>
+<br>
+<a href="https://www.instagram.com/p/B_Cj8HShoK_/" class="postlink"><img src="https://www.instagram.com/p/B_Cj8HShoK_/media/?size=m" class="postimage" alt="Image"></a></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1499" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1499">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1499">
+
+						<h3 ><a href="./viewtopic.php?p=1499#p1499">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1499" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1499#p1499" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-17T10:48:30+00:00">Fri Apr 17, 2020 10:48 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Tactical black, I like it! So we have one RotaryCell in the UK (mine), one in Australia... one good thing to rapidly spreading around the world!<br>
+<br>
+Yeah tell me about the delays, it's frustrating. I have the board and most SMT parts now but I fear my tools at home aren't appropriate. I'm waiting for my local Hackspace to re-open.<br>
+<br>
+I have an idea; I ordered 10 boards but I only need 2-3 (I'm going to donate a space model phone for display in a Hackspace). <strong class="text-strong">Owlwarrior:</strong> if you trust me with your address (via private message), I'll be happy to mail a board to you. It's my way of paying back to the community. Postal services are working in the UK, how about Australia?</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1500" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1500">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1746&amp;sr=posts">8</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Apr 17, 2020 2:06 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1500">
+
+						<h3 ><a href="./viewtopic.php?p=1500#p1500">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1500" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1500#p1500" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></strong> &raquo; </span><time datetime="2020-04-18T03:24:05+00:00">Sat Apr 18, 2020 3:24 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Yes, I love my black Bakelite landline phone and ways to integrate old technology into new. <br>
+<br>
+That’s very kind of you! Postage services in Australia are slow but working. I don’t want to take away from Justine’s business though.  I’ll drop you a PM. <br>
+<br>
+<br>
+<br>
+- Glenn</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1504" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1504">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1504">
+
+						<h3 ><a href="./viewtopic.php?p=1504#p1504">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1504" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1504#p1504" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-18T14:27:17+00:00">Sat Apr 18, 2020 2:27 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">This is the most complete open source project I have ever seen and you've already contributed to the open source culture by publishing your build, helping to inspire and spread Justine's design. It would be great to see your final result.<br>
+<br>
+I plan to visit my post office Monday morning.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1506" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1506">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1746&amp;sr=posts">8</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Apr 17, 2020 2:06 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1506">
+
+						<h3 ><a href="./viewtopic.php?p=1506#p1506">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1506" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1506#p1506" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></strong> &raquo; </span><time datetime="2020-04-19T03:04:12+00:00">Sun Apr 19, 2020 3:04 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Thank you! If I can help someone else in some small way, I will. <br>
+Keeping an eager eye on my mailbox. <br>
+<br>
+-Glenn</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1512" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1512">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1512">
+
+						<h3 ><a href="./viewtopic.php?p=1512#p1512">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1512" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1512#p1512" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-21T23:30:31+00:00">Tue Apr 21, 2020 11:30 pm</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">Owlwarrior:</strong> bare board is on it's way to you (only 19g, small letter). I just got the microcontroller working on mine. A huge relief after soldering the 0.5mm pitch ATmega2560 at home <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"><br>
+<br>
+The bootloader programmed first time with a Bus Pirate. Then I uploaded firmware via the USB (photos shows Rx/Tx LEDs on while programming), also good but USB Vbus only goes to the Tx/Rx LEDs and Fona, so without the Fona I needed the battery to power the board during programming. I guess the Fona supplies battery charging power... I need to check this out.<br>
+<br>
+I forgot this version of the board (Feb 2020) uses different switches. <strong class="text-strong">Owlwarrior:</strong> I recommend you hold off buying the switches in the BoM and try to source the vertical 'parts drawer' switches you see in Justine's video (22:34).<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=10" class="postimage" alt="pcb_programming.JPG" onclick="viewableArea(this);" /></dt>
+						<dd>pcb_programming.JPG (90.73 KiB) Viewed 4209 times</dd>
+		</dl>
+		
+		
+			</div>
+
+Thanks a lot Justine, it's all going smoothly so far.<br>
+Sorry I ditched the New Hampshire-esq motto but I would never ditch the attribution.</div>
+
+			
+			
+													<div class="notice">
+					Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a> on Fri Apr 24, 2020 3:02 am, edited 1 time in total.
+									</div>
+			
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1514" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1514">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1514">
+
+						<h3 ><a href="./viewtopic.php?p=1514#p1514">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1514" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1514#p1514" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-23T21:22:13+00:00">Thu Apr 23, 2020 9:22 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I found the 'parts drawer' switches used on the earlier versions of board (without the Sky'sEDGE logo), available from Mouser (note the mounting lugs should be cut off):<br>
+<br>
+Mfr.:      C&amp;K Switches<br>
+Mfr. No: OS102011MS2QN1<br>
+Mouser  No:  611-OS102011MS2QN1<br>
+Desc.:   Slide Switches SPDT On-On<br>
+<br>
+Mfr.: C&amp;K Switches<br>
+Mfr. No: OS103011MS8QP1<br>
+Mouser No: 611-OS103011MS8QP1<br>
+Desc.: Slide Switches SP3T On-On-On<br>
+<br>
+If the board has holes for switch mounting lugs, you need the part numbers for right angled switches specified in the BoM (extracted from the schematic).</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1515" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1515">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1746&amp;sr=posts">8</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Apr 17, 2020 2:06 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1515">
+
+						<h3 ><a href="./viewtopic.php?p=1515#p1515">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1515" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1515#p1515" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></strong> &raquo; </span><time datetime="2020-04-23T22:56:54+00:00">Thu Apr 23, 2020 10:56 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Awesome. Not to get ahead of myself, but which USB programmer did you use?<br>
+I’m looking for the OUMEX $20 one from mouser.com Justine used in her build video.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1516" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1516">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1516">
+
+						<h3 ><a href="./viewtopic.php?p=1516#p1516">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1516" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1516#p1516" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-24T00:57:07+00:00">Fri Apr 24, 2020 12:57 am</time>
+			</p>
+			
+			
+			
+			<div class="content">I used a BusPirate v3.6 to program the bootloader because I already had one (select 'BusPirate as ISP' for the programmer):<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=11" class="postimage" alt="pcb_programming_bp.JPG" onclick="viewableArea(this);" /></dt>
+						<dd>pcb_programming_bp.JPG (96.21 KiB) Viewed 4173 times</dd>
+		</dl>
+		
+		
+			</div>
+
+Note the pin number ordering of the phone's ISP socket (sketched in pencil).<br>
+<br>
+The $20 Olimex AVR-ISP-Mk2 programmer looks good value and ultra easy to use - a safe choice.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1517" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1517">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1748" class="username">paedipod</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1748&amp;sr=posts">13</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 25, 2020 2:26 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1517">
+
+						<h3 ><img src="./images/icons/smile/question.gif" width="16" height="16" alt="" title="" /> <a href="./viewtopic.php?p=1517#p1517">Re: So far...</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1517" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1517#p1517" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1748" class="username">paedipod</a></strong> &raquo; </span><time datetime="2020-04-25T14:42:33+00:00">Sat Apr 25, 2020 2:42 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Hi from Canada,<br>
+<br>
+Some trouble getting all of the parts together with current state of the world.....I did buy one of Justine’s kits as my abilities do not extend to PCboard fabrication. <br>
+<br>
+BUT as of this morning the FONA board is blinking and sort of receives calls. Assuming that the “ringing” is coming from the little speaker,  and I haven’t broken the top part of the board, someone can call me. I cannot answer the call however. <br>
+<br>
+The side LEDs work with dialing but no sound from the speaker either with the dialing or with trying to place a call by pressing the hook button either. <br>
+<br>
+So....fun parts done, now have to get the functional parts working. <br>
+<br>
+Just wondering if anyone has some “simple” troubleshooting ideas....I am not an “electronical engineer”.<br>
+<br>
+Cheers<br>
+Simon</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="./posting.php?mode=reply&amp;f=4&amp;t=1480" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?f=4&amp;t=1480&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=4&amp;t=1480">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			42 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=10" role="button">2</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=20" role="button">3</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=30" role="button">4</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1480&amp;start=40" role="button">5</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./viewtopic.php?f=4&amp;t=1480&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=4" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Rotary Cell Phone Kit Community Forum”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=4" class="jumpbox-forum-link"> <span> Rotary Cell Phone Kit Community Forum</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-forum-link"> <span> Robotics Technical Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=6" class="jumpbox-forum-link"> <span> General Open Source Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/forum/app.php/cron/cron.task.core.tidy_warnings" width="1" height="1" alt="cron" /></div>
+
+<script src="./assets/javascript/jquery-3.4.1.min.js?assets_version=6"></script>
+<script src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+</body>
+</html>

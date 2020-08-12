@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>A Forum at Sky's Edge - Search</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - A Forum at Sky's Edge" href="/forum/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/app.php/feed/topics">				
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/en/stylesheet.css?assets_version=6" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-search ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>A Forum at Sky's Edge</h1>
+				<p>Community Forum for Sky&#039;s Edge Hardware</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/app.php/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=search.php%3Fauthor_id%3D1724%26sd%3Dd%26sk%3Dt%26sr%3Dposts%26st%3D0%26start%3D20" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./index.php" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+																			<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./search.php" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Search</span></a><meta itemprop="position" content="2" /></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+
+<h2 class="searchresults-title">Search found 56 matches</h2>
+
+	<p class="advanced-search-link">
+		<a class="arrow-left" href="./search.php" title="Advanced search">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+
+
+	<div class="action-bar bar-top">
+
+			<div class="search-box" role="search">
+			<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="add_keywords" id="add_keywords" value="" placeholder="Search these results" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+			</fieldset>
+			</form>
+		</div>
+	
+		
+		<div class="pagination">
+						Search found 56 matches
+							<ul>
+			<li class="arrow previous"><a class="button button-icon-only" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=10" rel="prev" role="button"><i class="icon fa-chevron-left fa-fw" aria-hidden="true"></i><span class="sr-only">Previous</span></a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724" role="button">1</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=10" role="button">2</a></li>
+			<li class="active"><span>3</span></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=30" role="button">4</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=40" role="button">5</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=50" role="button">6</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=30" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+	</div>
+
+
+					<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Tue May 19, 2020 2:29 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></dd>
+						<dd>Replies: <strong>26</strong></dd>
+			<dd>Views: <strong>11069</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1567#p1567">Re: Firmware stuff</a></h3>
+			<div class="content"> Using the FONA RTC to display date time I hesitate to post this, it's not as reliable as I would like and might require delay tweaking&#46; Use the serial USB to check the code is receiving/parsing the right FONA messages&#46; Ideally we would have a parsing engine that is fed similar to TinyGPS++ but that&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1567#p1567" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Sun May 17, 2020 3:54 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15248</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1565#p1565">Re: So far...</a></h3>
+			<div class="content">Yeah I can imagine there must be some big potential collaborators lining up&#46; I look forward to more news&#46;&#46;&#46; meanwhile an announcement&#58; SteveC is proud to announce the arrival of healthy twins last Friday&#46; They weighed in at 188 and 199g and are both doing well&#46; They are already talking to each other&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1565#p1565" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Sat May 16, 2020 7:20 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1489">Can't program via USB</a></dd>
+						<dd>Replies: <strong>5</strong></dd>
+			<dd>Views: <strong>2456</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1564#p1564">Re: Can't program via USB</a></h3>
+			<div class="content">Looks like you'll have to burn a new bootloader&#46; While waiting for your 10 to 6 way programming adapter you can use breadboard jumper wires (aka Dupont wires) as an adapter&#46;&#46; Update 17 May&#58; just confirmed uploading a sketch via programmer removes the bootloader&#46; Justine&#58; perhaps you could supply ass&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1564#p1564" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Sat May 16, 2020 3:06 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1489">Can't program via USB</a></dd>
+						<dd>Replies: <strong>5</strong></dd>
+			<dd>Views: <strong>2456</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1562#p1562">Re: Can't program via USB</a></h3>
+			<div class="content">My bad, sorry, the STK500 is a programmer that does In-System programming via SPI, it misled me&#46; I just replicated your symptoms, I also had STK500 error messages when trying to upload via USB even though I don't have an STK500&#46; But when I started this project, uploading via USB had been very reliab&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1562#p1562" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Fri May 15, 2020 9:37 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1489">Can't program via USB</a></dd>
+						<dd>Replies: <strong>5</strong></dd>
+			<dd>Views: <strong>2456</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1560#p1560">Re: Can't program via USB</a></h3>
+			<div class="content"> programming&#46;jpg The message about "stk500" indicates you are trying to upload via a programmer (ctrl-shift-u)&#46; To use USB, just click the right arrow icon, or ctrl-U, the programmer type selection will have no effect for USB programming&#46; Make sure a battery is connected and the power switch is on&#46; &#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1489&amp;p=1560#p1560" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Mon May 11, 2020 7:07 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></dd>
+						<dd>Replies: <strong>26</strong></dd>
+			<dd>Views: <strong>11069</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1557#p1557">Re: Firmware stuff</a></h3>
+			<div class="content">I re-annotated the ATmega in this schematic with correct pin descriptions following 'MegaCore Arduino Mega' convention. I recommend anyone doing any development on the phone to update their schematic ATmega pin descriptions - it will save confusion!</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1557#p1557" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Mon May 11, 2020 2:41 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></dd>
+						<dd>Replies: <strong>26</strong></dd>
+			<dd>Views: <strong>11069</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1556#p1556">Re: Firmware stuff</a></h3>
+			<div class="content">A faulty pinout sheet? &#58;( In the phone's first KiCad release there was a pinout sheet named 'AtMega2560PinMap&#46;png'&#46; Unfortunately it has an error; it labels hardware pin 19 as 'Digital pin 53 (PWM)(RX1)'&#46; It can never be RX1&#46; So I guess the intention was to use Serial1 but it wouldn't work due to wi&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1556#p1556" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Mon May 11, 2020 12:52 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></dd>
+						<dd>Replies: <strong>26</strong></dd>
+			<dd>Views: <strong>11069</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1554#p1554">Re: Firmware stuff</a></h3>
+			<div class="content">Thanks but I haven't won yet&#46; My goal is to receive FONA Tx data reliably with, if necessary, an easy board mod (that rules out using a hardware serial)&#46; Unfortunately re-defining the SS pin as above doesn't work&#46; Some relevant stuff on software serial here&#58; https&#58;//www&#46;pjrc&#46;com/teensy/td_libs_AltSo&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1554#p1554" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Sun May 03, 2020 5:35 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15248</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1548#p1548">Re: So far...</a></h3>
+			<div class="content">That's really good good to see&#46; While I was stuck without a decent soldering station during, lockdown, seeing progress like this inspires&#46; A few pointers in case it helps and in no particular order&#58; The mic needs to be stuck down with something or the exposed pads could short something out&#46; There's &#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1548#p1548" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></dt>
+			<dd class="search-result-date">Sat May 02, 2020 7:09 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></dd>
+						<dd>Replies: <strong>26</strong></dd>
+			<dd>Views: <strong>11069</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1545#p1545">Re: Firmware stuff</a></h3>
+			<div class="content"> FONA serial communication To avoid the clash between SPI slave select (used by e-paper) & FONA Tx; instead of my hardware mod above, it might be possible to de-conflict in firmware&#46; In C&#58;\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega\pins_arduino&#46;h The SS pin is defined&#58; #define PI&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1486&amp;p=1545#p1545" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+			
+<div class="action-bar bottom">
+		<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All results</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="f">Forum</option><option value="i">Topic title</option><option value="s">Post subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a">Ascending</option><option value="d" selected="selected">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+	</form>
+		
+	<div class="pagination">
+		Search found 56 matches
+					<ul>
+			<li class="arrow previous"><a class="button button-icon-only" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=10" rel="prev" role="button"><i class="icon fa-chevron-left fa-fw" aria-hidden="true"></i><span class="sr-only">Previous</span></a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724" role="button">1</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=10" role="button">2</a></li>
+			<li class="active"><span>3</span></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=30" role="button">4</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=40" role="button">5</a></li>
+				<li><a class="button" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=50" role="button">6</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1724&amp;start=30" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+			</div>
+</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a class="left-box arrow-left" href="./search.php" title="Advanced search" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=4" class="jumpbox-forum-link"> <span> Rotary Cell Phone Kit Community Forum</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-forum-link"> <span> Robotics Technical Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=6" class="jumpbox-forum-link"> <span> General Open Source Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/forum/app.php/cron/cron.task.core.tidy_warnings" width="1" height="1" alt="cron" /></div>
+
+<script src="./assets/javascript/jquery-3.4.1.min.js?assets_version=6"></script>
+<script src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+</body>
+</html>

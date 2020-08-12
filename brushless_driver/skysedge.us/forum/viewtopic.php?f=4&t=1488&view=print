@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; A New Function</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>A New Function</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1488">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1488</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>A New Function</h3>
+				<div class="date">Posted: <strong>Wed May 13, 2020 4:49 pm</strong></div>
+				<div class="author">by <strong>13jwg</strong></div>
+				<div class="content">As most cell phones employ two transmitters, I wonder if it may be possible to add a Walkie Talkie (2-way or party line, UHF Radio) function to this dial-up cell phone as another unique anomaly....;--)<br>
+*In the old days of telephony, when individual lines in small communities were scarce, we used party lines so that everyone could be connected and we identified the person calling by the number of rings which prompted the targetted person to pick-up (example: 5-rings for Mary, 3-rings for Sam)<br>
+....there was no privacy here as anyone could listen-in but it still worked fine, just like a general open chat text message today.<br>
+__Am just thinking out-of-the-box here, as I believe this function does not exist in any other unit of the current smart phone variety.  <img class="smilies" src="./images/smilies/icon_mrgreen.gif" width="15" height="17" alt=":mrgreen:" title="Mr. Green"></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: A New Function</h3>
+				<div class="date">Posted: <strong>Fri May 22, 2020 9:42 pm</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">I've been extremely tempted by this possibility, but I don't want to get bogged down with feature creep before getting the 4G version out. Though I haven't even checked to see if someone has an FRS/GMRS SOC. <br>
+<br>
+I have a 2m HAM radio in my car and also some imaginings about a decentralized free wireless internet, so bypassing the cell system altogether is certainly something to consider.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: A New Function...</h3>
+				<div class="date">Posted: <strong>Mon Jun 01, 2020 7:47 pm</strong></div>
+				<div class="author">by <strong>13jwg</strong></div>
+				<div class="content"><strong class="text-strong">Another thought</strong> ... was to add a switch to allow toggling between a party-line frequency or a private dedicated frequency....;--)<br>
+<br>
+Famous past credo of the old tyme telephone tech ....."put a diode in it" .....(it still works well today).... <img class="smilies" src="./images/smilies/icon_mrgreen.gif" width="15" height="17" alt=":mrgreen:" title="Mr. Green"> <br>
+<br>
+Quote: Only dead fish go with the flow - Anonymous</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: A New Function</h3>
+				<div class="date">Posted: <strong>Mon Jun 01, 2020 9:34 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Hi jw, good news: you can simulate a party line with Justine's 3G design without changing phone hardware, or re-configuring radios. There's a straightforward way plus the cell phone will still work as a cell phone... just in case.<br>
+<br>
+This Raspberry Pi has been running Raspbx, a Private Branch Exchange in my home reliably for 2-3 years now. The data dongle on top is enabled for voice so one of the PBX extensions is a cell phone (useful for plans where cell to cell calls are free), details here: <a href="http://www.raspberry-asterisk.org" class="postlink">http://www.raspberry-asterisk.org</a>. The software runs on top of Asterisk: <em class="text-italics">"...the software behind most IP PBX systems, VoIP gateways, conference servers, used by SMBs, enterprises, call centers, carriers and governments worldwide."</em><br>
+<br>
+You could program the Rotary Cellphone voicemail button to call the PBX which then simulates a party line. E.g. press a button (send tone) for line 2, setup a 3-way call, or "Direct Inward System Access" (DISA), where the Raspbx recognises your cell number and gives you full access. You don't even need to connect the PBX to a landline. It works best with a SIP provider. I have two SIP trunks programmed, one is Callcentric based in the US, the other is based in Europe. The possibilities are endless. Asterisk is to phone systems as Linux is to servers... oh and the PBX can be set to record all your calls if you wish (check if legal first).<br>
+<br>
+[Justine: 2m? For real! I have a G8 call, I think it was issued in the late 70s, only active on 2m &amp; 70cm DMR though... in fact not really active period (just interested in the technology) 73s]<br>
+<br>
+The Rotary Cellphone could be a very smart phone in <strong class="text-strong">disguise</strong>. Just like Tux here.<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=29" class="postimage" alt="Raspbx.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>Raspbx.jpg (25.28 KiB) Viewed 2174 times</dd>
+		</dl>
+		
+		
+			</div></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: A New Function</h3>
+				<div class="date">Posted: <strong>Mon Jun 08, 2020 2:44 pm</strong></div>
+				<div class="author">by <strong>13jwg</strong></div>
+				<div class="content"><strong class="text-strong">Purely ...."FUNTASTIC" ...SteveC..... Many Thanks .... ;--) <br>
+<br>
+....... would like to see feedback from Justine on this ...when she has a bit of time .... <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> </strong></div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

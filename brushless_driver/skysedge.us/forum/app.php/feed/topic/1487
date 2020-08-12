@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="http://skysedge.us/forum/app.php/feed/topic/1487" />
+
+	<title>A Forum at Sky's Edge</title>
+	<subtitle>Community Forum for Sky&#039;s Edge Hardware</subtitle>
+	<link href="http://skysedge.us/forum/index.php" />
+	<updated>2020-05-04T01:58:14</updated>
+
+	<author><name><![CDATA[A Forum at Sky's Edge]]></name></author>
+	<id>http://skysedge.us/forum/app.php/feed/topic/1487</id>
+
+		<entry>
+		<author><name><![CDATA[justine]]></name></author>
+		<updated>2020-05-04T01:58:14</updated>
+
+		<published>2020-05-04T01:58:14</published>
+		<id>http://skysedge.us/forum/viewtopic.php?t=1487&amp;p=1551#p1551</id>
+		<link href="http://skysedge.us/forum/viewtopic.php?t=1487&amp;p=1551#p1551"/>
+		<title type="html"><![CDATA[NearZero v2.0 Firmware Now Shipping]]></title>
+
+		
+		<content type="html" xml:base="http://skysedge.us/forum/viewtopic.php?t=1487&amp;p=1551#p1551"><![CDATA[
+I just finished changes to the firmware for the NearZero motor controller (<a href="http://skysedge.us/robotics/nearzero/index.html" class="postlink">http://skysedge.us/robotics/nearzero/index.html</a>) that significantly enhance its capabilities. It's now at v2.0 and I don't expect to make additional changes for the foreseeable future. FYI this is the controller powering the robot in the banner video at <a href="http://skysedge.us" class="postlink">http://skysedge.us</a>.<br><br>~Justine<p>Statistics: Posted by <a href="http://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=2">justine</a> — Mon May 04, 2020 1:58 am</p><hr />
+]]></content>
+	</entry>
+	</feed>

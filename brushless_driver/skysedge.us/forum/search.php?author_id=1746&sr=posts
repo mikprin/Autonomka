@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>A Forum at Sky's Edge - Search</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - A Forum at Sky's Edge" href="/forum/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/app.php/feed/topics">				
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/en/stylesheet.css?assets_version=6" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-search ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>A Forum at Sky's Edge</h1>
+				<p>Community Forum for Sky&#039;s Edge Hardware</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/app.php/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=search.php%3Fauthor_id%3D1746%26sr%3Dposts" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./index.php" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+																			<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./search.php" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Search</span></a><meta itemprop="position" content="2" /></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+
+<h2 class="searchresults-title">Search found 8 matches</h2>
+
+	<p class="advanced-search-link">
+		<a class="arrow-left" href="./search.php" title="Advanced search">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+
+
+	<div class="action-bar bar-top">
+
+			<div class="search-box" role="search">
+			<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1746">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="add_keywords" id="add_keywords" value="" placeholder="Search these results" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+			</fieldset>
+			</form>
+		</div>
+	
+		
+		<div class="pagination">
+						Search found 8 matches
+							 &bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+					<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Tue Aug 11, 2020 3:49 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1618#p1618">Re: So far...</a></h3>
+			<div class="content">Sorry for my lack of posting for a while! I am onto the soldering&#46; I am getting some help with it and my ‘help’ has asked a question I don’t know the answer to&#58; The resistors are 2k ohm and in the circuit we have 470 ohm&#46; These are usually used for LED power if I use them the LED would have less int&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1618#p1618" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Tue Apr 28, 2020 9:48 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1536#p1536">Re: So far...</a></h3>
+			<div class="content">Bom parts arrived last week. Awaiting the PCB to arrive then I can start soldering.</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1536#p1536" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Thu Apr 23, 2020 10:56 pm</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1515#p1515">Re: So far...</a></h3>
+			<div class="content">Awesome. Not to get ahead of myself, but which USB programmer did you use?<br>
+I’m looking for the OUMEX $20 one from mouser.com Justine used in her build video.</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1515#p1515" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Mon Apr 20, 2020 11:12 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1482">Generating and Uploading the BOM list.</a></dd>
+						<dd>Replies: <strong>3</strong></dd>
+			<dd>Views: <strong>2213</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1482&amp;p=1510#p1510">Re: Generating and Uploading the BOM list.</a></h3>
+			<div class="content">Thanks. Got it working.<br>
+<br>
+- Glenn</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1482&amp;p=1510#p1510" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Sun Apr 19, 2020 5:24 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1482">Generating and Uploading the BOM list.</a></dd>
+						<dd>Replies: <strong>3</strong></dd>
+			<dd>Views: <strong>2213</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1482&amp;p=1507#p1507">Generating and Uploading the BOM list.</a></h3>
+			<div class="content">Hey everyone, I am attempting to generate the BOM parts list from Kicad/PCBnew and upload it to Digikey Electronics&#46; From PCBnew, I am going to File &gt; Fabrication Outputs &gt; BOMfile and creating the &#46;csv file&#46; When going to BOM manager on Digikey&#46;com and attempting to upload, I get a message saying "&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1482&amp;p=1507#p1507" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Sun Apr 19, 2020 3:04 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1506#p1506">Re: So far...</a></h3>
+			<div class="content">Thank you! If I can help someone else in some small way, I will. <br>
+Keeping an eager eye on my mailbox. <br>
+<br>
+-Glenn</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1506#p1506" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Sat Apr 18, 2020 3:24 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1500#p1500">Re: So far...</a></h3>
+			<div class="content">Yes, I love my black Bakelite landline phone and ways to integrate old technology into new. <br>
+<br>
+That’s very kind of you! Postage services in Australia are slow but working. I don’t want to take away from Justine’s business though.  I’ll drop you a PM. <br>
+<br>
+<br>
+<br>
+- Glenn</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1500#p1500" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="./memberlist.php?mode=viewprofile&amp;u=1746" class="username">Owlwarrior</a></dt>
+			<dd class="search-result-date">Fri Apr 17, 2020 2:27 am</dd>
+			<dd>Forum: <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a></dd>
+			<dd>Topic: <a href="./viewtopic.php?f=4&amp;t=1480">So far...</a></dd>
+						<dd>Replies: <strong>41</strong></dd>
+			<dd>Views: <strong>15255</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1498#p1498">So far...</a></h3>
+			<div class="content">Hey everyone, Aussie guy here&#46; I have my dial and my case but COVID19 has somewhat stopped me from getting some BOM and the PCB&#46; When this craziness is over I hope to complete my rotary dial phone but I’m chipping away at it a little bit at a time&#46; https&#58;//www&#46;instagram&#46;com/p/B_Cj8HShoK_/media/?size&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="./viewtopic.php?f=4&amp;t=1480&amp;p=1498#p1498" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+			
+<div class="action-bar bottom">
+		<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=1746">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All results</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="f">Forum</option><option value="i">Topic title</option><option value="s">Post subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a">Ascending</option><option value="d" selected="selected">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+	</form>
+		
+	<div class="pagination">
+		Search found 8 matches
+					 &bull; Page <strong>1</strong> of <strong>1</strong>
+			</div>
+</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a class="left-box arrow-left" href="./search.php" title="Advanced search" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=4" class="jumpbox-forum-link"> <span> Rotary Cell Phone Kit Community Forum</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-forum-link"> <span> Robotics Technical Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=6" class="jumpbox-forum-link"> <span> General Open Source Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/forum/app.php/cron/cron.task.core.tidy_warnings" width="1" height="1" alt="cron" /></div>
+
+<script src="./assets/javascript/jquery-3.4.1.min.js?assets_version=6"></script>
+<script src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+</body>
+</html>

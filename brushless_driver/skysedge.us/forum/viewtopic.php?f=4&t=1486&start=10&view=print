@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; Firmware stuff - Page 2</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="http://skysedge.us/forum/">http://skysedge.us/forum/</a></p>
+
+		<h2>Firmware stuff</h2>
+		<p><a href="http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1486">http://skysedge.us/forum/viewtopic.php?f=4&amp;t=1486</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>3</strong></div>
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Fri May 22, 2020 9:37 pm</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">Fork!</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Sat May 23, 2020 1:35 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><img class="smilies" src="./images/smilies/icon_e_surprised.gif" width="15" height="17" alt=":o" title="Surprised"> I was worried you might say that!  <img class="smilies" src="./images/smilies/icon_lol.gif" width="15" height="17" alt=":lol:" title="Laughing"><br>
+<br>
+Done: <a href="https://github.com/riosil/RotaryCellphone" class="postlink">https://github.com/riosil/RotaryCellphone</a><br>
+<br>
+First I wanted to confirm my suspicion of contention between the ATmega SPI SS and FONA Tx pin (see second post, this thread) because I only want to propose a hardware mod where absolutely necessary.<br>
+<br>
+I confirmed there is contention so the FONA Tx connection must be moved. In theory the SS pin definition could be changed but the ATmega2560 datasheet states if the hardware SS pin is set as input and pulled low, the SPI switches to slave mode - not good.<br>
+<br>
+This can be checked by removing the FONA board and commenting out <span style="color:#00BF00">display.init(115200);</span> in main - the FONA Tx wire floats. Uncomment the init and FONA Tx goes high when the e-paper display initialises. ¡Absolutamente no bueno!</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Mon May 25, 2020 6:58 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">I've been trying to wrap my head around all the work Steve has done here and, although I'm not 100% sure I grasp it all, that hasn't stopped me from expending a lot of time trying to debug this FONA serial stuff! At first I did not understand the conflict that Steve has pointed out between the FONA TX and the SS functionality. Anyway, as a gamble I added this line -- I added it to BatteryLevel() thinking I might need it before any call to read serial data -- but this one call seems to have "fixed" it so maybe it can go anywhere after the epaper display is initialialized:<br>
+<br>
+            pinMode(SS, INPUT);<br>
+<br>
+I can now reliably get battery and SignalStrength values. Also, the display still works ok...</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Mon May 25, 2020 7:22 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Ok, putting the " pinMode(SS, INPUT)" in  setup() did not work. It does work when placed in loop() but only after these statements:<br>
+<br>
+void loop(){<br>
+	<br>
+	if (CallOn == true){<br>
+		digitalWrite(HookLED, HIGH);<br>
+	}<br>
+	else if (CallOn == false){<br>
+		digitalWrite(HookLED, LOW);<br>
+	}<br>
+<br>
+	if (digitalRead(ModeSwitch_631) == LOW){<br>
+		mode = 1;<br>
+	}<br>
+ 	else if (digitalRead(ModeSwitch_NP) == LOW){<br>
+		mode = 2;<br>
+	}<br>
+	else if (digitalRead(ModeSwitch_alt) == LOW){<br>
+		mode = 3;<br>
+	}<br>
+<br>
+    pinMode(SS, INPUT);</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Mon May 25, 2020 11:55 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Thanks for posting your results Chaza. It helps me know I'm not going crazy  <img class="smilies" src="./images/smilies/icon_e_wink.gif" width="15" height="17" alt=";)" title="Wink"> <br>
+<br>
+Well done on finding the temporary fix with: <span style="color:#00BF00">pinMode(SS, INPUT);</span><br>
+<br>
+You understand the problem now... but you'll need real <em class="text-italics"><strong class="text-strong">"Try SCE to Aux"</strong></em> magic for it to work well enough for mission success.<br>
+<br>
+ATmega2560 datasheet section 21.1.2:
+<blockquote class="uncited"><div>If SS is configured as an input, it must be held high to ensure Master SPI operation. If the SS pin is driven low by<br>
+peripheral circuitry when the SPI is configured as a Master with the SS pin defined as an input, the SPI system<br>
+interprets this as another master selecting the SPI as a slave and starting to send data to it. To avoid bus conten-<br>
+tion, the SPI system takes the following actions:<br>
+1. The MSTR bit in SPCR is cleared and the SPI system becomes a Slave. As a result of the SPI becoming a<br>
+Slave, the MOSI and SCK pins become inputs.</div></blockquote>
+
+Therefore when the FONA Tx pin pulls SS low, the ATmega SPI will switch to slave and the e-paper will lose SPI data and clock unless you perform some <em class="text-italics">"SCE to Aux"</em> magic with registers and interrupts. This might get the crew home but it's not the smooth, polished SpaceX solution  <img class="smilies" src="./images/smilies/icon_lol.gif" width="15" height="17" alt=":lol:" title="Laughing"> <br>
+<br>
+Sorry, no idea where the space metaphors are coming from.<br>
+<br>
+ <img class="smilies" src="./images/smilies/icon_idea.gif" width="15" height="17" alt=":idea:" title="Idea"> Perhaps I should post a succinct version of the contention issue in another thread. Anyone support my (reluctant) view that a hardware mod (moving the FONA Tx wire) is the way forward?</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Tue May 26, 2020 10:56 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><strong class="text-strong">Firmware now fully working as intended</strong>  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+<br>
+Try this fork: <a href="https://github.com/riosil/RotaryCellphone" class="postlink">https://github.com/riosil/RotaryCellphone</a><br>
+<br>
+But the wire from FONA Tx to ATmega hardware pin 19 must be moved to pin 25 (nearest corner pin). See photo on first page of this thread.<br>
+<br>
+These are the startup messages over USB showing reliable communication from the FONA plus signal strength and battery charge levels:<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=27" class="postimage" alt="new_rx_monitor.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>new_rx_monitor.jpg (33.69 KiB) Viewed 3465 times</dd>
+		</dl>
+		
+		
+			</div>
+
+Does anyone have an easier fix?<br>
+<br>
+No new features in this branch (yet) - just everything working as I believe Justine intended.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Tue Jun 09, 2020 4:15 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Anyone support my (reluctant) view that a hardware mod (moving the FONA Tx wire) is the way forward?</div></blockquote>
+
+No feedback? I'm 90%+ sure re-wiring the FONA Tx pin is the best way forward but feedback would be appreciated.<br>
+<br>
+For anyone who has implemented the mod, my firmware contribution now includes a working hook status LED for incoming calls. The firmware checks for unsolicited messages from the FONA once every second; caller ID, call begin and call end.<br>
+<br>
+<a href="https://github.com/riosil/RotaryCellphone" class="postlink">https://github.com/riosil/RotaryCellphone</a><br>
+<br>
+PS: or to rephrase, has anyone got the ATmega microcontroller to receive serial messages from the FONA <strong class="text-strong">without</strong> rewiring the FONA Tx pin?</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Thu Jun 11, 2020 3:53 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Hi Steve --  I agree that your hardware fix fixes this issue. Personally, I will not attempt it however because <br>
+neither my hand dexterity or eyesight is good enough to attempt this fix (getting old ...).<br>
+<br>
+The "pinMode(SS, INPUT)" workaround seems to be working ok for me. I placed this in the loop() function after <br>
+the checks for the "mode switches".<br>
+<br>
+The biggest issue I found with making serial read calls is that if the SoftwareSerial buffer is not flushed after making calls<br>
+then any subsequent call you make, and attempt to read/interpret the output, will get the combined output of "unflushed" previous calls<br>
+as well as the one you just made. I think you have pointed this out as well. I added calls to FONAserialReceive to read out the buffer<br>
+after every call to FONAserial.println. In most cases we are not interested in the output but it's important to flush the buffer. <br>
+I also modified FONAserialReceive() to check for "ERROR" as well as "OK" as a message <br>
+terminator. I found that some of the calls in the code were returning errors (and that "ERROR" terminator). Specifically:<br>
+<br>
+In setup()<br>
+FONAserial.println("AT+VMUTE=0");	//Set speaker mute to OFF<br>
+  The "AT Command Set -- SIM5320 _ATC_V1.23" manual specifies that this can only be called during a connected call.<br>
+  Called here it returns an error. I've removed this call since it's not needed.<br>
+  <br>
+In RotaryIn()<br>
+FONAserial.print("AT+VTS=");	//Send DTMF tone over network (for menu entries, etc).<br>
+  The "AT Command Set -- SIM5320 _ATC_V1.23" manual specifies that this can only be used in voice mode of operation (active voice call)<br>
+  I left this call in but read out and discard the output with FONAserialReceive. In the context of a call this should return "OK" but I've<br>
+  not tried that. In most cases (just turning the dial before a connected call in Modes 1 or 2) this will return "ERROR".</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Example function to get last unanswered call</h3>
+				<div class="date">Posted: <strong>Thu Jun 11, 2020 8:18 pm</strong></div>
+				<div class="author">by <strong>chaza</strong></div>
+				<div class="content">Yes, there is some "unsafe" syntax here (not checking string limits, etc.) but I'll throw it out here as an example. This gets the last missed (unanswered) phone number. I added this to Functions.ino and a call to it in DisplayContacts() and I can display the number in place of "???-????". I use "display" very loosely in this context because, on my e-ink display, I can barely read anything! I basically ruined it early on in manhandling my phone build and trying to get it all together. Like others here, I'm waiting for a slow boat from China to deliver additional displays (I only had the one). <br>
+<br>
+Note that my FONAserialReceive() is modified somewhat from the base code but I'm not sure it matters here. Also, I have a FONAserialClearBuffer function that reads and discards anything in the serial output buffer -- just in case there is anything lingering in there. The code below shows some examples of what I expect FONAserialReceive() to deposit in the ReceivedChars buffer.<br>
+<br>
+-- caller must allocate space for the returned parameter. Example call:<br>
+                        char timeDateStr[64] = "???-????";<br>
+			getLastMissedCall(missedNumber);<br>
+			display.print(missedNumber);<br>
+<br>
+<br>
+void getLastMissedCall(char *missedNumber){<br>
+  int numValues = 0;<br>
+  char mN[64];<br>
+  int phoneNumberType;  // expect 129 or 145<br>
+  char temp[64];<br>
+<br>
+    FONAserialClearBuffer();<br>
+    FONAserial.println("AT+CPBS=\"MC\"");  // Select ME missed (unanswered received) calls list                                   <br>
+                                                              // Capacity: max. 10 entries<br>
+    delay(250);<br>
+    FONAserialReceive();<br>
+    Serial.println(ReceivedChars);  <br>
+    	<br>
+    FONAserial.println("AT+CPBR=1,1");     // ask for the first in the list (last received)<br>
+    delay(250);<br>
+    FONAserialReceive();<br>
+    Serial.println(ReceivedChars);<br>
+	<br>
+	// Example return values:<br>
+	//    AT+CPBR=1,1+CPBR:1,"11235551234",129,""<br>
+	//    AT+CPBR=1,1+CPBR:1,"+11235551234",145,""<br>
+<br>
+    numValues = sscanf (ReceivedChars, "AT+CPBR=1,1+CPBR:1,\"%[+0123456789]\",%d,\"\"", mN, &amp;phoneNumberType);<br>
+	<br>
+    Serial.println("In getLastMissedCall");<br>
+    Serial.print("mN: ");<br>
+    Serial.println(mN);<br>
+    Serial.print("phoneNumberType: ");<br>
+    sprintf(temp, "%d", phoneNumberType);<br>
+    Serial.println(temp);<br>
+	<br>
+    if (mN[0] == '+')<br>
+    {<br>
+	// Get rid of the plus sign<br>
+	strcpy(missedNumber, mN+1);<br>
+    }<br>
+    else<br>
+    {<br>
+	strcpy(missedNumber, mN);<br>
+    }<br>
+	<br>
+    // Restore default<br>
+    FONAserial.println("AT+CPBS");  // Restore default to "SM" (SIM phonebook)<br>
+    delay(250);<br>
+    FONAserialReceive();<br>
+	<br>
+}</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: Firmware stuff</h3>
+				<div class="date">Posted: <strong>Fri Jun 12, 2020 11:41 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Thanks Chaza, it's great to know there's a way to get the FONA serial comms working without a hardware mod. This should be very useful for those not building from bare boards. I think you could put this anywhere in the main loop so long as it's called once per loop:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>pinMode(SS, INPUT);</code></pre></div>
+
+I find it easier to read code when it's in a code block like this.<br>
+<br>
+I timed my loop, each main loop takes 106us [updated] so this resets the SS pin mode 9430 times a second (mileage may vary). Does the display continue to work without re-initialising it? Btw nice use of the <em class="text-italics">sscanf</em> method  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+<br>
+Tip for buying displays from AliExpress: I use the AliExpress shipment method for a good compromise between cost and speed plus it's tracked end to end. Waveshare ship especially fast through AliExpress, I receive their parts (UK) in about 10 calendar days.<br>
+<br>
+Thanks</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>2</strong> of <strong>3</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>
