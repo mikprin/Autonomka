@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="https://skysedge.us/forum/app.php/feed/topic/1476" />
+
+	<title>A Forum at Sky's Edge</title>
+	<subtitle>Community Forum for Sky&#039;s Edge Hardware</subtitle>
+	<link href="https://skysedge.us/forum/index.php" />
+	<updated>2020-03-31T19:47:37</updated>
+
+	<author><name><![CDATA[A Forum at Sky's Edge]]></name></author>
+	<id>https://skysedge.us/forum/app.php/feed/topic/1476</id>
+
+		<entry>
+		<author><name><![CDATA[justine]]></name></author>
+		<updated>2020-03-31T19:47:37</updated>
+
+		<published>2020-03-31T19:47:37</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1486#p1486</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1486#p1486"/>
+		<title type="html"><![CDATA[Re: Phone Care]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1486#p1486"><![CDATA[
+Yeah that sounds good! I actually bought a bunch of steel belt clips (the clip by itself) to make some kind of holder but haven't gotten around to it yet. It <em class="text-italics">does</em> fit in many of my pockets as-is.<p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=2">justine</a> — Tue Mar 31, 2020 7:47 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[13jwg]]></name></author>
+		<updated>2020-03-29T23:14:36</updated>
+
+		<published>2020-03-29T23:14:36</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1482#p1482</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1482#p1482"/>
+		<title type="html"><![CDATA[Phone Care]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1476&amp;p=1482#p1482"><![CDATA[
+Hello Justine,<br>My question is in regard to carrying the phone; I was thinking a semi rigid leather pouch, what would you suggest?<br><br>Thanks...;--)<p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1744">13jwg</a> — Sun Mar 29, 2020 11:14 pm</p><hr />
+]]></content>
+	</entry>
+	</feed>

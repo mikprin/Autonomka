@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; So far... - Page 3</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="https://skysedge.us/forum/">https://skysedge.us/forum/</a></p>
+
+		<h2>So far...</h2>
+		<p><a href="https://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480">https://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>3</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Tue Apr 28, 2020 1:44 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><strong class="text-strong">Yaay I got my phone working!</strong>  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy">  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+<br>
+Thanks Justine for clearing up the USB programming stuff. Yeah It might not be for everyone but I have to connect via USB for debugging anyway.<br>
+<br>
+Debugging with <em class="text-italics">Serial.print</em> statements via USB is very useful.<br>
+<br>
+<strong class="text-strong">Simon:</strong> I had exactly the same problem as you. The FONA would ring but I couldn't answer a call. I traced the problem to the FONA not auto negotiating the 4800 baud rate with the ATmega and therefore not receiving setup commands. You can set the correct persistent baud rate via USB on the FONA. TBH it's a good idea to check the FONA is working this way before installing it:
+<ul>
+<li>Connect up the FONA like this (optional: add a headset):<br>
+<a href="https://learn.adafruit.com/assets/27351" class="postlink">https://learn.adafruit.com/assets/27351</a></li>
+
+<li>Install the driver, note the Windows driver on the Adafruit website doesn't work (it's unsigned). Get the driver from SIMCom here:<br>
+<a href="https://simcom.ee/documents/?dir=SIM5320" class="postlink">https://simcom.ee/documents/?dir=SIM5320</a> (for Windows: sign_driver_8.1.rar)</li>
+
+<li>Find the new serial port (look for the device 'SimTech HS-USB AT Port9000'), connect to it via a serial console. Baud rate shouldn't matter... <span style="color:#FF4000">update 1 May: baud rate <strong class="text-strong">does</strong> matter. Set the same rate as FONA serial UART rate, 4800 (sorry I confused USB communication class).</span></li>
+
+<li>Enter: AT &lt;return&gt; and check you get the response 'OK'.</li>
+
+<li>Enter: AT+IPREX=4800 &lt;enter&gt; to set the baud rate to 4800. This persists across power cycles.</li>
+</ul>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=14" class="postimage" alt="set_baud_rate.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>set_baud_rate.jpg (34.25 KiB) Viewed 3598 times</dd>
+		</dl>
+		
+		
+			</div>
+
+You can then proceed to a test call, send these commands in turn (don't forget the semicolon after the number to call):<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>AT+CVHU=0
+AT+CSDVC=1                 [use headset]
+AT+CRXGAIN=10000
+AT+CLVL=3
+AT+CRSL=8
+ATD&lt;phone number&gt;;</code></pre></div>
+
+Hang up with: ATH &lt;enter&gt;<br>
+<br>
+Re: the ePaper display; the current firmware does not refresh the display on power up. You need to do something; e.g. switch to Alt and dial 0. So your display might be working fine.<br>
+<br>
+Re: IDE compile errors, it might be just a case of not have all the required libraries. Could you send a screenshot of your IDE's message window?<br>
+<br>
+HTH<br>
+<em class="text-italics">Steve</em></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Tue Apr 28, 2020 9:48 pm</strong></div>
+				<div class="author">by <strong>Owlwarrior</strong></div>
+				<div class="content">Bom parts arrived last week. Awaiting the PCB to arrive then I can start soldering.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Thu Apr 30, 2020 6:37 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Justine and Steve,<br>
+<br>
+thanks for looking at my "issues".....stole an hour this morning away from work and successfully broke some more things.  The programmer did not come with a 10-6 pin cable or adapter so "found" a source of cable/headers and schematic and now I have a cable (from Ion) from the programmer to the socket on the board! <br>
+<br>
+Plugged in just fine and to check things burned the bootloader and then a millisecond afterwards thought that perhaps that was not the best idea.....yup. Everything that was working is now gone. Temporarily eliminates the ePaper issue.  On the plus side I can get the status light to blink at whatever rated that I want. <br>
+<br>
+So on to the Arduino IDE sketches,  the main.ino comes back with this:<a href="https://postimg.cc/F1ZkzHDj" class="postlink"><img src="https://i.postimg.cc/65srH7Z1/Screen-Shot-2020-04-30-at-12-16-55-PM.png" class="postimage" alt="Image"></a><br>
+<br>
+AS for the FONA,  seems that the driver is "not intended for this platform" although it is a Windows machine. <br>
+<br>
+back to work for the afternoon so will trouble shoot some more on the weekend.<br>
+cheers</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Thu Apr 30, 2020 10:25 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><strong class="text-strong">Don't Panic!</strong> Looks worse thank it is! Simply move <em class="text-italics">Functions.ino</em> into the <em class="text-italics">main</em> folder. Contacts.ino should be in <em class="text-italics">main</em> too.<br>
+<br>
+Yes you need to install a driver to communicate directly with the FONA's USB port. I posted a link to the SIMcom download folder above but the specific file you need is: <a href="https://simcom.ee/documents/SIM5320/sign_driver_8.1.rar" class="postlink">https://simcom.ee/documents/SIM5320/sign_driver_8.1.rar</a>. You need WinRAR or similar to open the archive, it contains both 32 &amp; 64 bit Windows drivers.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Fri May 01, 2020 12:32 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Steve:  Thank you!  Couldn’t sleep so got up in my Arthur Dent robe and got some stuff done before I have to head back to work, your assistance has been invaluable and I will see about working through your other post re:firmware.<br>
+<br>
+So:<br>
+1. Uploaded <em class="text-italics">correct</em> driver and I think changed the FONA.  Cannot get the FONA to dial on its own with the PuTTY commands.  I am not a Terminal emulator person...<br>
+2. Re-flashed the firmware and can now get tones while dialing (except when I dial zero). Hit the hook button and multiple tones with status light blinking followed by hook light so......<br>
+3. Can dial out!  Can call our land-line and hear my wife answer but she cannot hear me.  Best I can tell the microphone still nicely attached to the board.<br>
+4. Can dial in, phone rings, I can increase/decrease the ringer volume but cannot answer a call, hook button not functional in this instance. <br>
+5. eInk display still not powering up. <br>
+<br>
+Plans: go to work.  <img class="smilies" src="./images/smilies/icon_lol.gif" width="15" height="17" alt=":lol:" title="Laughing"> <br>
+<br>
+Once back home will try and find a way to check the display and the connectivity b/w board/eInk friend and the display.<br>
+Happy Friday everyone!</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Fri May 01, 2020 2:07 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Awesome... and an HHTG fan too, I'm impressed!<br>
+<br>
+So the speaker is working but the mic. isn't. That means the correct audio channel is selected but perhaps the mic is wired the wrong way round (red on the right)? Also make sure the mic is protected against shorting something. I use a tiny piece of double-sided sticky foam tape to secure the mic over the space between R6 &amp; C9.<br>
+<br>
+Sorry I was wrong earlier when I said baud rate for the FONA USB connection doesn't matter (I was confused with another USB communication class). Set your PuTTY terminal to use the same baud rate as the FONA serial, 4800 baud. You can also use the Arduino serial monitor, just change the port.<br>
+<br>
+<em class="text-italics">"What do you mean, why's it got to be built? It's a bypass. You've got to build bypasses."<br>
+Swap 'bypass' for 'Rotary Cell Phone'!</em>  <img class="smilies" src="./images/smilies/icon_lol.gif" width="15" height="17" alt=":lol:" title="Laughing"></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun May 03, 2020 2:44 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content"><div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=17" class="postimage" alt="24DAAFE1-0CAC-45EB-9DC7-2CF268FAC3D8.jpeg" onclick="viewableArea(this);" /></dt>
+						<dd>24DAAFE1-0CAC-45EB-9DC7-2CF268FAC3D8.jpeg (117.45 KiB) Viewed 3513 times</dd>
+		</dl>
+		
+		
+			</div>
+
+<br>
+Well there it is before installation into the enclosure. Steve, I followed your advice regarding the mike and the little piece of foam tape cushions where the dial meets the board a bit too. No idea of significance. Reflashed the board and re-soldered a few things (no differences I could see at 2.5x magnification but felt better to do something other than just fret about lack of software ability....). <br>
+<br>
+And all of a sudden <em class="text-italics">it’s alive!</em><br>
+Then after a bout of assembly it was back to failure again...there is a lot of stuff packed in there!  Opened up the case and re-routed a few things and now all that is left is to get the eInk display stuck down without artifact. <br>
+<br>
+Once I get yesterday’s neglected chores done I will try out your firmware mods.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun May 03, 2020 3:32 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">and in the "box".  Still some things to figure out about switches and functions and hoping that with the relaxing of the curve of the display the artifact will settle out......<br>
+<a href="https://postimg.cc/tYc1Qy03" class="postlink"><img src="https://i.postimg.cc/Dwv1GyBM/5-B2-F5-B79-DAFF-4162-BA37-F8864-CCD32-D2.jpg" class="postimage" alt="Image"></a><br>
+<a href="https://postimg.cc/YjbGRYby" class="postlink"><img src="https://i.postimg.cc/c4NRscYZ/DBA571-DE-7-C40-462-A-8-EB9-F242297-A0685.jpg" class="postimage" alt="Image"></a><br>
+<a href="https://postimg.cc/XpqZzqPN" class="postlink"><img src="https://i.postimg.cc/QxkpVWk7/9-F03-C1-ED-CDD3-42-EF-B3-C3-1-AE3-CC43-BF3-C.jpg" class="postimage" alt="Image"></a></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun May 03, 2020 5:35 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">That's really good good to see. While I was stuck without a decent soldering station during, lockdown, seeing progress like this inspires.<br>
+<br>
+A few pointers in case it helps and in no particular order:
+<ul>
+<li>The mic needs to be stuck down with something or the exposed pads could short something out.</li>
+<li>There's a knack to getting everything inside but once mastered it's easy. Take your time and plan the antenna cable route. Tip: lightly hold the battery from rotating with a piece of masking tape.</li>
+<li>For the case to close fully, the gap between PCB &amp; dial (under the '4') should be only 3-4mm (with only slight pressure on the dial). To achieve this you'll probably need to 'Dremel' off the top tab and a cut-out for the power switch. As a test, insert the assembly into the top cover and check the PCB can rest on the pillars next to the Clear &amp; Hook buttons (slight dial pressure is OK).</li>
+<li>There's a minor issue with the 'February edition' case which could snag and break the speaker connections if not careful when (dis)connecting the ePaper. If the case surrounds the speaker on all 4 sides, cut down the side nearest the dial to allow the speaker to slide into place. This has been done with the 'April edition'.</li>
+<li>Use the absolute minimum epoxy for the display. Check epoxy hasn't filled the cut-out where the FPC stiffener should go - that bit of space is very important.</li>
+<li>Don't underestimate what Justine said about taking time with the display bend. I couldn't find a bending spec from Dalian Good Display Co. but I found one for the the similar Waveshare display I use. Click the resources tab here: <a href="https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_%28D%29" class="postlink">https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(D)</a>. Yes, a minimum bend radius of 5cm! Take it real slow and easy. Oh and if your display has labels on the back (Waveshare), leave them on! Organic solvents like isopropanol destroys them.</li>
+<li>Firmware updates, I believe the phone can do a lot more. I posted an example of the battery meter fix to show a new way to parse the FONA's messages. This method could be applied to other functions too. I've also got the FONA to set it's RTC from the network and send date and time over the debugging USB... BUT first it's necessary to improve reliability of the FONA to ATmega communication and perhaps improve the FONAserialReceive() function (it can return a lot of junk!). I'm taking a break from this for a while, I hope someone else can contribute here.</li>
+<li>In the meantime the phone can certainly make and receive phone calls - which is what it's all about. Dial someone then pass the working phone to a friend/relative, their amazement is priceless <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"></li> 
+</ul>
+
+Simon: I think you've earned yourself a few Timmies  <img class="smilies" src="./images/smilies/icon_e_wink.gif" width="15" height="17" alt=";)" title="Wink"> <span style="color:#80FFFF"><em class="text-italics">[sigh]</em></span></div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Mon May 04, 2020 1:53 am</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">Wow, there are now more working rotary cell phones out in the world. Very cool guys. <br>
+<br>
+Sorry I've been a bit quiet... quite busy with things.<br>
+<br>
+And yeah, assembly is a PITA, I hate to say. Glad you're all "stickin' in there" and having success. You can tell that it wasn't designed with manufacture in mind.<br>
+<br>
+More soon.</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>3</strong> of <strong>5</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

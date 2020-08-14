@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex" />
+
+<title>A Forum at Sky's Edge &bull; So far... - Page 2</title>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="./styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>A Forum at Sky's Edge</h1>
+		<p>Community Forum for Sky&#039;s Edge Hardware<br /><a href="https://skysedge.us/forum/">https://skysedge.us/forum/</a></p>
+
+		<h2>So far...</h2>
+		<p><a href="https://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480">https://skysedge.us/forum/viewtopic.php?f=4&amp;t=1480</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sat Apr 25, 2020 9:01 pm</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">I am so excited to see all the progress in this thread.<br>
+<br>
+Simon,<br>
+<br>
+Yes the ringing can only be coming from the speaker, so that's a good sign. Considering you got that far I know you have a SIM card installed and activated, so that's also good.<br>
+<br>
+I made more improvements to the firmware before sending out the batches everyone received* and now calls are answered by pressing the top-right "hook" button only (not too at a time). I attempted to capture all of the operational functionality with this one image from the build page: <a href="http://skysedge.us/unsmartphones/rotarycellphone_3g/build/functionguide_top.JPG" class="postlink">http://skysedge.us/unsmartphones/rotary ... de_top.JPG</a> But that's probably not enough information. Long story short, answer (and place) calls just by pressing the hook button once and not two buttons at the same time as I think I described in the video. <br>
+<br>
+I'm thinking your next step should be trying to pick up the incoming call. Once that's working and the person on the other end hears you, the phone <em class="text-italics">should</em> be fully functional. It *shouldn't* matter but can you attempt to answer the incoming call with the mode switch in each of the three positions?<br>
+<br>
+~Justine</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sat Apr 25, 2020 11:07 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">HI Justine...<br>
+<br>
+Yes good progress (i think) but not quite successful as yet.<br>
+<br>
+So far:  dialing: left-side LEDs and status light flash.  No tone from speaker. Top switch in mid-position and press the hook button, I get 3 sets of flashes down the side and in the status light, then hook LED stays lit.  Still no sound from the speaker.  <br>
+            Incoming call: regular chirp from speaker but pressing hook button does nothing, eventually goes to voicemail (via my carrier).<br>
+            If the top switch isn’t in mid position does not dial consistently<br>
+            And I guess last bit of “not doing so well” is I don’t have the eInk going as yet.  <br>
+Could I have fried the top end of the board with some inept soldering of the eInk friend? Or when I re-attached the speaker? (I knocked it off putting the dial in place. <br>
+I am waiting for a cable/adapter for the AVRISP so I can re-flash the firmware if that is the issue. <br>
+<br>
+Still plenty of positive feed back from the “locals”, feels pretty close!<br>
+<br>
+Simon</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 26, 2020 1:00 am</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content"><blockquote><div><cite><a href="./memberlist.php?mode=viewprofile&amp;u=1748">paedipod</a> wrote: <a href="./viewtopic.php?p=1523#p1523" data-post-id="1523" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sat Apr 25, 2020 11:07 pm</div></cite>
+I am waiting for a cable/adapter for the AVRISP so I can re-flash the firmware if that is the issue. 
+</div></blockquote>
+
+Good news, no need to wait for your AVR-ISP programmer. You only need a USB cable since Justine supplied the board ready programmed (with bootloader I assume).<br>
+<br>
+Simply connect the phone to your computer by USB. In the Arduino IDE click Tools --&gt; Port and make sure the USB port is selected, then click ctrl-U to upload via USB (or the right arrow symbol in the toolbar).</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 26, 2020 11:50 am</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Thanks Steve for the suggestion....I wasn’t super clear...I have the programmer, just not the correct 6 pin cable to plug from the programmer to the board.  Unless the programming can occur through the microUSB charge port.....<br>
+<br>
+Cheers<br>
+Simon</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 26, 2020 12:29 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">Simon, yes you can program now through the micro USB. It's not just a charging port, it's a serial communication and programming port. The only thing you can't do via USB is program the bootloader but Justine's already done that for you. The bootloader gives you the option to program via USB.<br>
+<br>
+HTH</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 26, 2020 1:38 pm</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Good to know!!! You are restoring my faith in forum discussions   <br>
+<br>
+Will try things out and post back</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Sun Apr 26, 2020 9:59 pm</strong></div>
+				<div class="author">by <strong>SteveC</strong></div>
+				<div class="content">The confusion is understandable.<br>
+<br>
+On the 3G phone's main page: "<em class="text-italics">An in-system programmer is required to upload Arduino sketches, as I didn't include a reset line from the UART pins.</em>"<br>
+<br>
+But this is not the case (from the February 2020 version at least).
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=13" class="postimage" alt="reset.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>reset.jpg (30.1 KiB) Viewed 3565 times</dd>
+		</dl>
+		
+		
+			</div>
+There is a reset line from the UART. Provided the bootloader has been loaded, the phone's firmware CAN be uploaded via USB. I use this method.<br>
+<br>
+If it's not working for you (and you're sure the bootloader is OK) check that C10 is installed (just below and to the left of U1).</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Mon Apr 27, 2020 12:11 am</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">Steve,<br>
+Thanks for your attention to this. It is very helpful but it may be above my pay grade...<br>
+<br>
+The weekend is now over for me so will have to wait until next Saturday.  Not sure that the bootloader is working.  MY understanding of the Arduino IDE is rudimentary at best so this might end up being my self-improvement project.  As it is, the .ino files loaded into the IDE do not compile properly, error listed is that things are out of scope. If firmware is loaded properly and this is a hardware/board issue then a moot point.<br>
+<br>
+Anyway, in the process of identifying where the problem is, I have removed the FONA board and I can still get the left side leds to light, as well as the status light.  Pressing hook after dialing does give led action.  I can dial up the call volume and ringer volume.  All of this has no output to the speaker, (and not different to any of the functions with FONA board attached - apart from I cannot call in and get a ring/chirp from the speaker). So to me (I am more familiar with pipes, cables and strings), seems like a problem between dial output and speaker.  <br>
+<br>
+Off to work for the week and back at it on Saturday then. <br>
+Cheers and stay well.<br>
+Simon</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Mon Apr 27, 2020 12:17 am</strong></div>
+				<div class="author">by <strong>paedipod</strong></div>
+				<div class="content">And one last piece of the puzzle....I cannot get the eInk display to work.</div>
+			</div>
+			<hr />
+					<div class="post">
+				<h3>Re: So far...</h3>
+				<div class="date">Posted: <strong>Tue Apr 28, 2020 12:05 am</strong></div>
+				<div class="author">by <strong>justine</strong></div>
+				<div class="content">Okay,<br>
+<br>
+So regarding the C10 cap, yeah programming via the USB port <em class="text-italics">should</em> work but I never seem to have luck with this on any of my homespun boards, which you now are all subjected too. Hence the statement about needing the ISP. Maybe I'm doing something consistently boneheaded with the bootloader. Anyway I find it to be so much easier to use an ISP than the USB port as one doesn't need to disrupt the USB/serial connection (which might be open for debugging) just to flash the board, so I don't feel terrible about calling it required hardware.<br>
+<br>
+Simon, you said you don't have the 6-pin cable. I'm surprised, did the programmer not come with it? The AVR-ISP-Mk2 comes with it, no? By the way an odd thing about that programmer is that the 6-pin cable gets connected to the Mk2's 10-pin header via an adapter, which also should come with it. I've been burned by that because for a while I would do something like drop the programmer, and the cable would come out, and I would put the cable back into the 6-pin header (which seems like the obvious thing to do), and then it seems like dropping the programmer broke it. I think I threw a perfectly good one away once for this reason.<br>
+<br>
+Re. the ePaper, Simon, did you attach it before integrating the main board with the enclosure, before flexing the display at all?<br>
+<br>
+I *sincerely* doubt you could have blown the board by soldering it. Are you happy with your solder work? If you want you could post some close-up pictures of the vicinity of the ePaper friend and of the speaker, on the other side, maybe we could comment.</div>
+			</div>
+			<hr />
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br />Page <strong>2</strong> of <strong>5</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

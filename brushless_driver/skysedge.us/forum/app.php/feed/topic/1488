@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="https://skysedge.us/forum/app.php/feed/topic/1488" />
+
+	<title>A Forum at Sky's Edge</title>
+	<subtitle>Community Forum for Sky&#039;s Edge Hardware</subtitle>
+	<link href="https://skysedge.us/forum/index.php" />
+	<updated>2020-06-08T14:44:45</updated>
+
+	<author><name><![CDATA[A Forum at Sky's Edge]]></name></author>
+	<id>https://skysedge.us/forum/app.php/feed/topic/1488</id>
+
+		<entry>
+		<author><name><![CDATA[13jwg]]></name></author>
+		<updated>2020-06-08T14:44:45</updated>
+
+		<published>2020-06-08T14:44:45</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1590#p1590</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1590#p1590"/>
+		<title type="html"><![CDATA[Re: A New Function]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1590#p1590"><![CDATA[
+<strong class="text-strong">Purely ...."FUNTASTIC" ...SteveC..... Many Thanks .... ;--) <br><br>....... would like to see feedback from Justine on this ...when she has a bit of time .... <img class="smilies" src="https://skysedge.us/forum/images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> </strong><p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1744">13jwg</a> — Mon Jun 08, 2020 2:44 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[SteveC]]></name></author>
+		<updated>2020-06-01T21:34:55</updated>
+
+		<published>2020-06-01T21:34:55</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1587#p1587</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1587#p1587"/>
+		<title type="html"><![CDATA[Re: A New Function]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1587#p1587"><![CDATA[
+Hi jw, good news: you can simulate a party line with Justine's 3G design without changing phone hardware, or re-configuring radios. There's a straightforward way plus the cell phone will still work as a cell phone... just in case.<br><br>This Raspberry Pi has been running Raspbx, a Private Branch Exchange in my home reliably for 2-3 years now. The data dongle on top is enabled for voice so one of the PBX extensions is a cell phone (useful for plans where cell to cell calls are free), details here: <a href="http://www.raspberry-asterisk.org" class="postlink">http://www.raspberry-asterisk.org</a>. The software runs on top of Asterisk: <em class="text-italics">"...the software behind most IP PBX systems, VoIP gateways, conference servers, used by SMBs, enterprises, call centers, carriers and governments worldwide."</em><br><br>You could program the Rotary Cellphone voicemail button to call the PBX which then simulates a party line. E.g. press a button (send tone) for line 2, setup a 3-way call, or "Direct Inward System Access" (DISA), where the Raspbx recognises your cell number and gives you full access. You don't even need to connect the PBX to a landline. It works best with a SIP provider. I have two SIP trunks programmed, one is Callcentric based in the US, the other is based in Europe. The possibilities are endless. Asterisk is to phone systems as Linux is to servers... oh and the PBX can be set to record all your calls if you wish (check if legal first).<br><br>[Justine: 2m? For real! I have a G8 call, I think it was issued in the late 70s, only active on 2m &amp; 70cm DMR though... in fact not really active period (just interested in the technology) 73s]<br><br>The Rotary Cellphone could be a very smart phone in <strong class="text-strong">disguise</strong>. Just like Tux here.<br><div class="inline-attachment"><dl class="file"><dt class="attach-image"><img src="https://skysedge.us/forum/download/file.php?id=29" class="postimage" alt="Raspbx.jpg" onclick="viewableArea(this);" /></dt></dl></div><p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1724">SteveC</a> — Mon Jun 01, 2020 9:34 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[13jwg]]></name></author>
+		<updated>2020-06-01T19:47:05</updated>
+
+		<published>2020-06-01T19:47:05</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1586#p1586</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1586#p1586"/>
+		<title type="html"><![CDATA[Re: A New Function...]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1586#p1586"><![CDATA[
+<strong class="text-strong">Another thought</strong> ... was to add a switch to allow toggling between a party-line frequency or a private dedicated frequency....;--)<br><br>Famous past credo of the old tyme telephone tech ....."put a diode in it" .....(it still works well today).... <img class="smilies" src="https://skysedge.us/forum/images/smilies/icon_mrgreen.gif" width="15" height="17" alt=":mrgreen:" title="Mr. Green"> <br><br>Quote: Only dead fish go with the flow - Anonymous<p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1744">13jwg</a> — Mon Jun 01, 2020 7:47 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[justine]]></name></author>
+		<updated>2020-05-22T21:42:15</updated>
+
+		<published>2020-05-22T21:42:15</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1574#p1574</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1574#p1574"/>
+		<title type="html"><![CDATA[Re: A New Function]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1574#p1574"><![CDATA[
+I've been extremely tempted by this possibility, but I don't want to get bogged down with feature creep before getting the 4G version out. Though I haven't even checked to see if someone has an FRS/GMRS SOC. <br><br>I have a 2m HAM radio in my car and also some imaginings about a decentralized free wireless internet, so bypassing the cell system altogether is certainly something to consider.<p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=2">justine</a> — Fri May 22, 2020 9:42 pm</p><hr />
+]]></content>
+	</entry>
+		<entry>
+		<author><name><![CDATA[13jwg]]></name></author>
+		<updated>2020-05-13T16:49:56</updated>
+
+		<published>2020-05-13T16:49:56</published>
+		<id>https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1558#p1558</id>
+		<link href="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1558#p1558"/>
+		<title type="html"><![CDATA[A New Function]]></title>
+
+		
+		<content type="html" xml:base="https://skysedge.us/forum/viewtopic.php?t=1488&amp;p=1558#p1558"><![CDATA[
+As most cell phones employ two transmitters, I wonder if it may be possible to add a Walkie Talkie (2-way or party line, UHF Radio) function to this dial-up cell phone as another unique anomaly....;--)<br>*In the old days of telephony, when individual lines in small communities were scarce, we used party lines so that everyone could be connected and we identified the person calling by the number of rings which prompted the targetted person to pick-up (example: 5-rings for Mary, 3-rings for Sam)<br>....there was no privacy here as anyone could listen-in but it still worked fine, just like a general open chat text message today.<br>__Am just thinking out-of-the-box here, as I believe this function does not exist in any other unit of the current smart phone variety.  <img class="smilies" src="https://skysedge.us/forum/images/smilies/icon_mrgreen.gif" width="15" height="17" alt=":mrgreen:" title="Mr. Green"><p>Statistics: Posted by <a href="https://skysedge.us/forum/memberlist.php?mode=viewprofile&amp;u=1744">13jwg</a> — Wed May 13, 2020 4:49 pm</p><hr />
+]]></content>
+	</entry>
+	</feed>

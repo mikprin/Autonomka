@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>A Forum at Sky's Edge - Unanswered topics</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - A Forum at Sky's Edge" href="/forum/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/app.php/feed/topics">				
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/en/stylesheet.css?assets_version=6" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-search ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>A Forum at Sky's Edge</h1>
+				<p>Community Forum for Sky&#039;s Edge Hardware</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/app.php/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=search.php%3Fsearch_id%3Dunanswered" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./index.php" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+																			<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./search.php" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Search</span></a><meta itemprop="position" content="2" /></span>
+																							<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./search.php?search_id=unanswered" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Unanswered topics</span></a><meta itemprop="position" content="3" /></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+
+<h2 class="searchresults-title">Unanswered topics</h2>
+
+	<p class="advanced-search-link">
+		<a class="arrow-left" href="./search.php" title="Advanced search">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+
+
+	<div class="action-bar bar-top">
+
+			<div class="search-box" role="search">
+			<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=topics&amp;search_id=unanswered">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="add_keywords" id="add_keywords" value="" placeholder="Search these results" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+			</fieldset>
+			</form>
+		</div>
+	
+		
+		<div class="pagination">
+						Search found 7 matches
+							 &bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+		<div class="forumbg">
+
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl class="row-item">
+					<dt><div class="list-inner">Topics</div></dt>
+					<dd class="posts">Replies</dd>
+					<dd class="views">Views</dd>
+					<dd class="lastpost"><span>Last post</span></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist topics">
+
+								<li class="row bg1">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1497" class="topictitle">Small Tip - Re: Dials</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1497&amp;p=1619#p1619" title="Go to last post"><time datetime="2020-08-13T20:32:26+00:00">Thu Aug 13, 2020 8:32 pm</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																																by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a> &raquo; <time datetime="2020-08-13T20:32:26+00:00">Thu Aug 13, 2020 8:32 pm</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">10 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a>															<a href="./viewtopic.php?f=4&amp;t=1497&amp;p=1619#p1619" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-08-13T20:32:26+00:00">Thu Aug 13, 2020 8:32 pm</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg2">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1495" class="topictitle">RCP: How to lose friends!</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1495&amp;p=1612#p1612" title="Go to last post"><time datetime="2020-07-10T14:17:39+00:00">Fri Jul 10, 2020 2:17 pm</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																<i class="icon fa-paperclip fa-fw" aria-hidden="true"></i>																by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a> &raquo; <time datetime="2020-07-10T14:17:39+00:00">Fri Jul 10, 2020 2:17 pm</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">983 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>															<a href="./viewtopic.php?f=4&amp;t=1495&amp;p=1612#p1612" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-07-10T14:17:39+00:00">Fri Jul 10, 2020 2:17 pm</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg1">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1494" class="topictitle">Tactile Feedback - Re:Dial</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1494&amp;p=1611#p1611" title="Go to last post"><time datetime="2020-06-24T00:47:36+00:00">Wed Jun 24, 2020 12:47 am</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																																by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a> &raquo; <time datetime="2020-06-24T00:47:36+00:00">Wed Jun 24, 2020 12:47 am</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">1132 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=1744" class="username">13jwg</a>															<a href="./viewtopic.php?f=4&amp;t=1494&amp;p=1611#p1611" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-06-24T00:47:36+00:00">Wed Jun 24, 2020 12:47 am</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg2">
+				<dl class="row-item topic_read">
+					<dt style="background-image: url(./images/icons/smile/info.gif); background-repeat: no-repeat;" title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1492" class="topictitle">How to get the components in Germany.</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=1756" class="username">Alex L.</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1492&amp;p=1595#p1595" title="Go to last post"><time datetime="2020-06-10T12:50:42+00:00">Wed Jun 10, 2020 12:50 pm</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																<i class="icon fa-paperclip fa-fw" aria-hidden="true"></i>																by <a href="./memberlist.php?mode=viewprofile&amp;u=1756" class="username">Alex L.</a> &raquo; <time datetime="2020-06-10T12:50:42+00:00">Wed Jun 10, 2020 12:50 pm</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">1239 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=1756" class="username">Alex L.</a>															<a href="./viewtopic.php?f=4&amp;t=1492&amp;p=1595#p1595" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-06-10T12:50:42+00:00">Wed Jun 10, 2020 12:50 pm</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg1">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1491" class="topictitle">Oh, man... I want one!</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=1754" class="username">Falcon9h</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1491&amp;p=1588#p1588" title="Go to last post"><time datetime="2020-06-07T00:27:17+00:00">Sun Jun 07, 2020 12:27 am</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																																by <a href="./memberlist.php?mode=viewprofile&amp;u=1754" class="username">Falcon9h</a> &raquo; <time datetime="2020-06-07T00:27:17+00:00">Sun Jun 07, 2020 12:27 am</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">1281 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=1754" class="username">Falcon9h</a>															<a href="./viewtopic.php?f=4&amp;t=1491&amp;p=1588#p1588" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-06-07T00:27:17+00:00">Sun Jun 07, 2020 12:27 am</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg2">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=5&amp;t=1487" class="topictitle">NearZero v2.0 Firmware Now Shipping</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a> &laquo; <a href="./viewtopic.php?f=5&amp;t=1487&amp;p=1551#p1551" title="Go to last post"><time datetime="2020-05-04T01:58:14+00:00">Mon May 04, 2020 1:58 am</time></a>
+									<br />Posted in <a href="./viewforum.php?f=5">Robotics Technical Discussion</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																																by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a> &raquo; <time datetime="2020-05-04T01:58:14+00:00">Mon May 04, 2020 1:58 am</time> &raquo; in <a href="./viewforum.php?f=5">Robotics Technical Discussion</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">6833 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a>															<a href="./viewtopic.php?f=5&amp;t=1487&amp;p=1551#p1551" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-05-04T01:58:14+00:00">Mon May 04, 2020 1:58 am</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+											<li class="row bg1">
+				<dl class="row-item topic_read">
+					<dt title="There are no new unread posts for this topic.">
+												<div class="list-inner">
+																					<a href="./viewtopic.php?f=4&amp;t=1458" class="topictitle">Use This Forum</a>
+																												<br />
+							
+															<div class="responsive-show" style="display: none;">
+									Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a> &laquo; <a href="./viewtopic.php?f=4&amp;t=1458&amp;p=1463#p1463" title="Go to last post"><time datetime="2020-03-19T21:37:13+00:00">Thu Mar 19, 2020 9:37 pm</time></a>
+									<br />Posted in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+								</div>
+														
+							<div class="responsive-hide left-box">
+																																by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a> &raquo; <time datetime="2020-03-19T21:37:13+00:00">Thu Mar 19, 2020 9:37 pm</time> &raquo; in <a href="./viewforum.php?f=4">Rotary Cell Phone Kit Community Forum</a>
+															</div>
+
+							
+													</div>
+					</dt>
+					<dd class="posts">0 <dfn>Replies</dfn></dd>
+					<dd class="views">5245 <dfn>Views</dfn></dd>
+					<dd class="lastpost">
+						<span><dfn>Last post </dfn>by <a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a>															<a href="./viewtopic.php?f=4&amp;t=1458&amp;p=1463#p1463" title="Go to last post">
+									<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only"></span>
+								</a>
+														<br /><time datetime="2020-03-19T21:37:13+00:00">Thu Mar 19, 2020 9:37 pm</time>
+						</span>
+					</dd>
+				</dl>
+			</li>
+							</ul>
+
+		</div>
+	</div>
+	
+
+<div class="action-bar bottom">
+		<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=topics&amp;search_id=unanswered">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All results</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="f">Forum</option><option value="i">Topic title</option><option value="s">Post subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a">Ascending</option><option value="d" selected="selected">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+	</form>
+		
+	<div class="pagination">
+		Search found 7 matches
+					 &bull; Page <strong>1</strong> of <strong>1</strong>
+			</div>
+</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a class="left-box arrow-left" href="./search.php" title="Advanced search" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=4" class="jumpbox-forum-link"> <span> Rotary Cell Phone Kit Community Forum</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-forum-link"> <span> Robotics Technical Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=6" class="jumpbox-forum-link"> <span> General Open Source Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script src="./assets/javascript/jquery-3.4.1.min.js?assets_version=6"></script>
+<script src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+</body>
+</html>

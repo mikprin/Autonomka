@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Firmware stuff - A Forum at Sky's Edge</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - A Forum at Sky's Edge" href="/forum/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/app.php/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Rotary Cell Phone Kit Community Forum" href="/forum/app.php/feed/forum/4">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Firmware stuff" href="/forum/app.php/feed/topic/1486">	
+	<link rel="canonical" href="https://skysedge.us/forum/viewtopic.php?t=1486">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/en/stylesheet.css?assets_version=6" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>A Forum at Sky's Edge</h1>
+				<p>Community Forum for Sky&#039;s Edge Hardware</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/app.php/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Ff%3D4%26p%3D1555%26t%3D1486" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope><a href="./index.php" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+																			<span class="crumb"  itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="4"><a href="./viewforum.php?f=4" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">Rotary Cell Phone Kit Community Forum</span></a><meta itemprop="position" content="2" /></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?f=4&amp;t=1486">Firmware stuff</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Discuss building and using the 3G rotary cell phone kit. If you're seeking help or would like to help others, this is the place to post.<br /></div>
+
+
+<div class="action-bar bar-top">
+	
+			<a href="./posting.php?mode=reply&amp;f=4&amp;t=1486" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?f=4&amp;t=1486&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="1486" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			27 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1486&amp;start=10" role="button">2</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1486&amp;start=20" role="button">3</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./viewtopic.php?f=4&amp;t=1486&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1537" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1537">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1537">
+
+						<h3 class="first"><a href="./viewtopic.php?p=1537#p1537">Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1537" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1537#p1537" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-04-29T23:53:09+00:00">Wed Apr 29, 2020 11:53 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Now my phone is working I'm starting to look at the firmware. I'm not on Github, yet, until then perhaps I could post issues here?<br>
+<br>
+<strong class="text-strong">FONA serial communication</strong><br>
+<br>
+I suspect there's an issue receiving serial data from the FONA.<br>
+<br>
+I thought let the ATmega hardware UART do all the serial comms; swap <em class="text-italics">FONAserial</em> for <em class="text-italics">Serial1</em>, after all the FONA is connected to RX1 / TX1 right? I swapped FONAserial for Serial1, the sketch compiled OK but the FONA didn't receive anything.<br>
+<br>
+The schematic shows:<br>
+RX(D)1 on pin 19, really it's pin 45 used by <em class="text-italics">NoPrepend</em><br>
+TX(D)1 on pin 18, really it's pin 46 used by <em class="text-italics">AltKey</em><br>
+<br>
+RXD2/TXD2 and RXD3/TXD3 pins are also in use.<br>
+<br>
+So there's no easy way to switch to Serial1. When I get the time I'll cut the connections to the mode switch, wire together pins 19 to 45 and 18 to 46 (setting pins 18 &amp; 19 to input). Then I can check whether swapping to hardware serial helps (it might not).<br>
+<br>
+It's worth the effort to see my daughters surprise when I handed her the working phone   <img class="smilies" src="./images/smilies/icon_e_surprised.gif" width="15" height="17" alt=":o" title="Surprised">  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"><br>
+<br>
+<span style="color:#FF4000">Update 30 April: there's a strong pull-up on the FONA Tx line (low is 2.2V) therefore the ATmega doesn't recognise the serial data. There's no s/c on the board and the FONA Tx output is fine when I disconnect it from the phone PCB. The ATmega Rx (hardware pin 19, Arduino pin 53) is shared with the SPI Slave Select and the SPI is used by e-Paper. Even though SS isn't wired to the e-Paper, the GxEPD2 library might be using 4-wire SPI mode and driving the SS line.</span></div>
+
+			
+			
+													<div class="notice">
+					Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a> on Fri May 01, 2020 7:25 am, edited 1 time in total.
+									</div>
+			
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1540" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1540">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1540">
+
+						<h3 ><a href="./viewtopic.php?p=1540#p1540">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1540" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1540#p1540" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-01T00:16:09+00:00">Fri May 01, 2020 12:16 am</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">FONA serial communication</strong><br>
+<br>
+I just confirmed (as suspected above) the ATmega SPI SS (slave select) is interfering with the SoftwareSerial data from the FONA.<br>
+<br>
+The solution is either to prevent the spi.h or GxEPD2 library from using the SS line (pass!). Or use a different pin for Rx on the ATmega:
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=15" class="postimage" alt="rxpin_mod.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>rxpin_mod.jpg (118.06 KiB) Viewed 4679 times</dd>
+		</dl>
+		
+		
+			</div>
+Cut the track between ATmega hardware pin 19 and the via, remove the solder resist from the via, solder a wire from the via to ATmega hardware pin 25 (aka Arduino pin 12).<br>
+<br>
+Then change the SoftwareSerial instance to:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>SoftwareSerial FONAserial(12, 9); //Rx, Tx (Steve's hardware mod for Rx)</code></pre></div>
+
+The ATmega can now reliably receive data from the FONA... before we know it the Rotary Cell Phone will be displaying missed numbers  <img class="smilies" src="./images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"><br>
+<br>
+I'm happy with SoftwareSerial on my board now it's working.</div>
+
+			
+			
+													<div class="notice">
+					Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a> on Sat May 02, 2020 2:30 am, edited 1 time in total.
+									</div>
+			
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1544" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1544">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1544">
+
+						<h3 ><a href="./viewtopic.php?p=1544#p1544">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1544" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1544#p1544" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-02T02:26:29+00:00">Sat May 02, 2020 2:26 am</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">Battery Level</strong><br>
+<br>
+I got the battery level indicator working. Replace the BatteryLevel() function in <em class="text-italics">Function.ino</em> with:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>void BatteryLevel(){
+  while (digitalRead(BatteryButton) == LOW){  //Loop for as long as the battery level button is depressed.
+    FONAserial.println("AT+CBC");             //The answer is in the form eg:'+CBC: 0,100,4.232V' where 4.232 is the battery voltage
+    FONAserialReceive();                      //This function also returns preceeding lines and post linefeeds, we have to parse them out  
+    if (NewData == true){
+      digitalWrite(StatusLED, HIGH);
+      char* token = strtok(ReceivedChars, ","); //The first pass of strtok returns everything up to the first comma
+      token = strtok(NULL, ",");                //...then everything between the first &amp; second comma
+      token = strtok(NULL, "V");                //...then everything between the 2nd comma * the 'V'. This should be the string of voltage
+      float Vbat = (String(token)).toFloat();   //Lets try to convert the voltage string to a float
+      if (Vbat &gt; 2 &amp;&amp; Vbat &lt; 5) {               //This function only makes sense of ReceivedChars about 80% of tries, check result is sensible
+        lhlf = int(((Vbat - 3.3) * 100/(4.2 - 3.3))/10);  //If it is, convert to 1-10 scale. Adjust if required: Vflat=3.3V, Vfull=4.2V
+        Serial.print("Vbat: ");                 //This is useful for debugging via the serial USB
+        Serial.println(Vbat);
+        BarGraphSlow(lhlf);
+      }
+      else
+        Serial.println("Vbat read invalid");
+      NewData = false;
+      digitalWrite(StatusLED, LOW);
+    }
+  }
+}</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1545" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1545">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1545">
+
+						<h3 ><a href="./viewtopic.php?p=1545#p1545">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1545" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1545#p1545" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-02T19:09:29+00:00">Sat May 02, 2020 7:09 pm</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">FONA serial communication</strong><br>
+<br>
+To avoid the clash between SPI slave select (used by e-paper) &amp; FONA Tx; instead of my hardware mod above, it might be possible to de-conflict in firmware.<br>
+<br>
+In C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega\pins_arduino.h<br>
+The SS pin is defined:<br>
+#define PIN_SPI_SS    (53)<br>
+<br>
+Try re-defining SS to an unused  pin with this define near the beginning of <em class="text-italics">main.ino</em>:<br>
+#define PIN_SPI_SS    10<br>
+<br>
+I'm not going to try it myself because I've already hardware modded my board but I'd be interested to know if this works for others.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1549" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1549">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a>							</dt>
+
+						<dd class="profile-rank">Site Admin</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2&amp;sr=posts">27</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Feb 23, 2020 2:34 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1549">
+
+						<h3 ><a href="./viewtopic.php?p=1549#p1549">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1549" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1549#p1549" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a></strong> &raquo; </span><time datetime="2020-05-04T01:46:59+00:00">Mon May 04, 2020 1:46 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Excellent! Excellent! Thank you very much! First-rate troubleshooting. More soon.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1554" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1554">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1554">
+
+						<h3 ><a href="./viewtopic.php?p=1554#p1554">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1554" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1554#p1554" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-11T12:52:32+00:00">Mon May 11, 2020 12:52 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Thanks but I haven't won yet. My goal is to receive FONA Tx data reliably with, if necessary, an easy board mod (that rules out using a hardware serial).<br>
+<br>
+Unfortunately re-defining the SS pin as above doesn't work.<br>
+<br>
+Some relevant stuff on software serial here:<br>
+<a href="https://www.pjrc.com/teensy/td_libs_AltSoftSerial.html" class="postlink">https://www.pjrc.com/teensy/td_libs_AltSoftSerial.html</a><br>
+Near the end Paul writes: <em class="text-italics">"SoftwareSerial should NOT be used at slow baud rates, because it will interfere with the other ports."</em></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1555" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1555">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a>							</dt>
+
+						<dd class="profile-rank">Site Admin</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=2&amp;sr=posts">27</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Feb 23, 2020 2:34 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1555">
+
+						<h3 ><a href="./viewtopic.php?p=1555#p1555">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1555" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1555#p1555" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">justine</a></strong> &raquo; </span><time datetime="2020-05-11T13:51:53+00:00">Mon May 11, 2020 1:51 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I have to start looking into this myself. FYI, I can't recall why I resorted to software serial to begin with but there WAS a reason.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1556" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1556">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1556">
+
+						<h3 ><a href="./viewtopic.php?p=1556#p1556">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1556" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1556#p1556" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-11T14:41:27+00:00">Mon May 11, 2020 2:41 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">A faulty pinout sheet?  <img class="smilies" src="./images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"> <br>
+<br>
+In the phone's first KiCad release there was a pinout sheet named 'AtMega2560PinMap.png'. Unfortunately it has an error; it labels hardware pin 19 as 'Digital pin 53 (PWM)(RX1)'. It can never be RX1. So I guess the intention was to use Serial1 but it wouldn't work due to wiring error.<br>
+<br>
+I could be wrong but I vaguely remember that pinout sheet somewhere on the arduino.cc website (since fixed).<br>
+<br>
+Best,<br>
+<em class="text-italics">'Sherlock'</em></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1557" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1557">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1557">
+
+						<h3 ><a href="./viewtopic.php?p=1557#p1557">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1557" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1557#p1557" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-11T19:07:02+00:00">Mon May 11, 2020 7:07 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I re-annotated the ATmega in this schematic with correct pin descriptions following 'MegaCore Arduino Mega' convention. I recommend anyone doing any development on the phone to update their schematic ATmega pin descriptions - it will save confusion!</div>
+
+			
+							<dl class="attachbox">
+					<dt>
+						Attachments
+					</dt>
+											<dd>
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=21" class="postimage" alt="re-annotated_atmega.jpg" onclick="viewableArea(this);" /></dt>
+						<dd>re-annotated_atmega.jpg (150.25 KiB) Viewed 4434 times</dd>
+		</dl>
+		
+		
+			</dd>
+									</dl>
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1567" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1567">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1724&amp;sr=posts">56</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Mar 21, 2020 1:26 pm</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Cambridge</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1567">
+
+						<h3 ><a href="./viewtopic.php?p=1567#p1567">Re: Firmware stuff</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=4&amp;p=1567" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1567#p1567" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1724" class="username">SteveC</a></strong> &raquo; </span><time datetime="2020-05-19T14:29:06+00:00">Tue May 19, 2020 2:29 pm</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">Using the FONA RTC to display date time</strong><br>
+<br>
+I hesitate to post this, it's not as reliable as I would like and might require delay tweaking. Use the serial USB to check the code is receiving/parsing the right FONA messages. Ideally we would have a parsing engine that is fed similar to TinyGPS++ but that entails a lot of work.<br>
+<br>
+First check you can receive network time. Connect a serial terminal to the FONA USB and enter the following command to enable RTC auto update from the network (this setting is saved to non volatile memory): AT+CTZU=1<br>
+<br>
+Restart the FONA and issue the following to check the RTC is updated: AT+CCLK?<br>
+If the returned date is 6 Jan 00, the FONA hasn't updated it's RTC from the network.<br>
+<br>
+<strong class="text-strong">Variable assignments:</strong>
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>byte rtcYear;
+byte rtcMonth;
+byte rtcDay;
+byte rtcHour;
+byte rtcMin;
+byte dow;                     // Day of the week; 0 = Sunday, 6 = Saturday
+String dowStr = "Invalid";
+String monthStr = "time";
+const int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};  // Array t used for day of the week algorithm
+</code></pre></div>
+
+<strong class="text-strong">Replace the Sa button code in main:</strong>
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>  //*********************Sa BUTTON**********************************************************************************
+  if (digitalRead(SaButton) == LOW){   //I couldn't think of a name for this button. Sa doesn't have particular meaning.
+    //                                   Perhaps call it the T(ime) button? [SteveC]
+		//IF IN 631 MODE, DO SOMETHING TBD... GET RTC TIME
+		if (digitalRead(ModeSwitch_631) == LOW){
+			mode = 1;
+			getTime();
+      Serial.printf("%d/%d/%d  %02d:%02d\n", rtcDay, rtcMonth, rtcYear+2000, rtcHour, rtcMin);
+      display.setPartialWindow(0, 185, 104, 26);    // Partial update of bottom 26 rows of pixels only
+      display.firstPage();                     //this function is called before every time ePaper is updated
+      do {
+        display.setFont();  //Back to default font
+        display.setCursor(5, 185);
+        display.print(dowStr);
+        display.printf(" %d ", rtcDay);
+        display.print(monthStr);
+        display.setFont(&amp;FreeMonoBold9pt7b);
+        display.setCursor(24, 208);
+        display.printf("%02d:%02d", rtcHour, rtcMin);
+      } while (display.nextPage());
+      display.setFullWindow();          // back to full window
+      display.powerOff();
+    digitalWrite(StatusLED, LOW);
+    }
+		//IF IN NP MODE, CALL VOICEMAIL
+		else if (digitalRead(ModeSwitch_NP) == LOW){
+			mode = 2;
+			ClearBufferSilent();
+			pagenum = 8;
+			PNumber[0] = 4;
+			RetrieveContact();
+			MakeCall();
+    }
+		//IF IN ALT MODE, CALL CONTACT FROM CURRENT PAGE
+		else if (digitalRead(ModeSwitch_alt) == LOW){
+			mode = 3;
+			ClearBufferSilent();
+			newrotaryinput = false;
+			while (digitalRead(SaButton) == LOW){
+				RotaryIn();
+      }
+			if (PNumber[0] != 99){
+				RetrieveContact();
+				MakeCall();			
+				newrotaryinput = false;
+				ClearBufferSilent();
+      }
+    }
+  }
+</code></pre></div>
+
+<strong class="text-strong">Place this in Functions:</strong>
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>void getTime(){
+  int i = 0;
+  bool validMsg = false;
+  digitalWrite(StatusLED, HIGH);
+  do {
+    FONAserial.println("AT+CCLK?");     //Get RTC values. Example answer: +CCLK: "20/05/01,13:40:58+04"
+    delay(250);
+    FONAserialReceive();
+    Serial.print(i);                    //These 3 lines were used for debugging over USB serial
+    Serial.print(": ");                 //comment these out
+    Serial.println(ReceivedChars);      //if it not required.
+    if ((String(ReceivedChars).indexOf("+CCLK:")) &gt;= 0)
+      validMsg = true;
+    i++;
+    NewData = false;
+    delay(100);
+  } while (i &lt; 8 &amp;&amp; validMsg == false);    // Try up to 8 attempts to get a valid time msg (Rx buffer may contain junk)
+  delay(80);
+  if (validMsg == true){
+    char * token = strtok(ReceivedChars, "\"");  //returns everything before the first '"' &amp; discard it
+    token = strtok(NULL, "/");                   //...then everything up to the first '/' but process it (2 digit year)
+    rtcYear = (String(token)).toInt();
+    token = strtok(NULL, "/");                   //...then return remainder up to next '/' (2 digit month)
+    rtcMonth = (String(token)).toInt();
+    token = strtok(NULL, ",");                   //...return remainder up to ',' (2 digit day of month)
+    rtcDay = (String(token)).toInt();
+    token = strtok(NULL, ":");                   //...return remainder up to first ':' (hour)
+    rtcHour = (String(token)).toInt();
+    token = strtok(NULL, ":");                   //...return remainder up to next ':' (minutes)
+    rtcMin = (String(token)).toInt();
+    // Calculate day of week (dow) for a given date, Sun=0, Sat=6
+    // using Tomohiko Sakamoto's algorithm
+    int y = (rtcYear+2000) - (rtcMonth &lt; 3);
+    dow = (y + y/4 - y/100 + y/400 + t[rtcMonth-1] + rtcDay) % 7;
+    switch (dow) {
+      case 0:
+        dowStr = "Sun";
+        break;
+      case 1:
+        dowStr = "Mon";
+        break;
+      case 2:
+        dowStr = "Tue";
+        break;
+     case 3:
+        dowStr = "Wed";
+        break;
+      case 4:
+        dowStr = "Thu";
+        break;
+      case 5:
+        dowStr = "Fri";
+        break;
+      case 6:
+        dowStr = "Sat";
+        break;
+      default:
+        break;
+      }
+    switch (rtcMonth) {         // Because an old fashioned phone should use words rather than numbers!
+      case 1:                   // also some countries use weird day, month number order!
+        monthStr = "January";
+        break;
+      case 2:
+        monthStr = "February";
+        break;
+      case 3:
+        monthStr = "March";
+        break;
+      case 4:
+        monthStr = "April";
+        break;
+     case 5:
+        monthStr = "May";
+        break;
+      case 6:
+        monthStr = "June";
+        break;
+      case 7:
+        monthStr = "July";
+        break;
+      case 8:
+        monthStr = "August";
+        break;
+      case 9:
+        monthStr = "September";
+        break;
+      case 10:
+        monthStr = "October";
+        break;
+      case 11:
+        monthStr = "November";
+        break;
+      case 12:
+        monthStr = "December";
+        break;
+      default:
+        break;
+      }
+  }
+  else {
+    dowStr = "Invalid";
+    monthStr = "time";
+  }
+}
+</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="./posting.php?mode=reply&amp;f=4&amp;t=1486" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?f=4&amp;t=1486&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=4&amp;t=1486">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			27 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1486&amp;start=10" role="button">2</a></li>
+				<li><a class="button" href="./viewtopic.php?f=4&amp;t=1486&amp;start=20" role="button">3</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="./viewtopic.php?f=4&amp;t=1486&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=4" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Rotary Cell Phone Kit Community Forum”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=4" class="jumpbox-forum-link"> <span> Rotary Cell Phone Kit Community Forum</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-forum-link"> <span> Robotics Technical Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=6" class="jumpbox-forum-link"> <span> General Open Source Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script src="./assets/javascript/jquery-3.4.1.min.js?assets_version=6"></script>
+<script src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+</body>
+</html>
