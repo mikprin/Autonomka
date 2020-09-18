@@ -1,0 +1,51 @@
+# Jetson script.
+
+#ZSH
+sudo apt install zsh 
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+sudo apt install nano
+
+
+sudo apt -y update
+sudo apt -y upgrade 
+
+
+echo 'zsh' >> ~/.bashrc
+echo 'echo "Welcome user! you are in z shell of UVL jetson" >> ~/.bashrc
+
+
+sudo apt-get -y install python3-pip
+pip3 --version
+pip3 install --upgrade pip
+
+sudo apt -y install protobuf-compiler
+python3 -m pip install cython
+
+
+cd ~
+mkdir git 
+cd git 
+
+sudo apt-get -y install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
+
+wget https://developer.download.nvidia.com/compute/redist/jp/v44/tensorflow/tensorflow-1.15.3+nv20.8-cp36-cp36m-linux_aarch64.whl
+
+
+python3 -m pip install tensorflow-1.15.3+nv20.8-cp36-cp36m-linux_aarch64.whl
+
+rm tensorflow-1.15.3+nv20.8-cp36-cp36m-linux_aarch64.whl
+
+
+
+git clone https://github.com/tensorflow/models.git
+cd models/research
+protoc object_detection/protos/*.proto --python_out=.
+cp object_detection/packages/tf1/setup.py .
+
+python3 -m pip install --use-feature=2020-resolver .
+
+
+
+

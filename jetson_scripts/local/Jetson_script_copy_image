@@ -1,0 +1,7 @@
+#status=progress
+
+  
+
+
+dd if=/dev/mmcblk0 of=/path/to/output bs=64K conv=noerror,sync status=progress
+
